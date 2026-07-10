@@ -48,3 +48,21 @@ SSL/TLS mode: `Full` atau `Full (strict)`.
 Push ke `main` akan menjalankan test, build, lalu deploy otomatis ke VPS.
 
 Manual deploy bisa dari tab `Actions > Deploy > Run workflow`.
+
+## Operasional
+
+Lihat status:
+
+```bash
+ssh ubuntu@43.157.204.188
+cd /opt/sahabatcerdikdm/source
+docker compose --env-file .env.production -f docker-compose.prod.yml ps
+```
+
+Lihat QR WhatsApp:
+
+```bash
+docker compose --env-file .env.production -f docker-compose.prod.yml logs -f app
+```
+
+Backup database tersimpan otomatis di volume `postgres-backups` dan disimpan 14 hari.

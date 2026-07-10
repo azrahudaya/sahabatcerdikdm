@@ -21,6 +21,11 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=5000
 ENV WHATSAPP_PROVIDER=mock
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
+
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends chromium fonts-liberation \
+  && rm -rf /var/lib/apt/lists/*
 
 COPY --from=deps /app/node_modules ./node_modules
 COPY --from=build /app/package*.json ./
