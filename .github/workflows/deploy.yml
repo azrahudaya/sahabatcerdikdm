@@ -44,11 +44,11 @@ jobs:
             --exclude='storage' \
             --exclude='coverage' \
             --exclude='.env' \
-            -czf release.tgz .
+            -czf /tmp/sahabatcerdikdm-release.tgz .
 
       - name: Upload release
         run: |
-          scp -i ~/.ssh/deploy_key release.tgz "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/tmp/sahabatcerdikdm-release.tgz"
+          scp -i ~/.ssh/deploy_key /tmp/sahabatcerdikdm-release.tgz "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/tmp/sahabatcerdikdm-release.tgz"
 
       - name: Deploy on VPS
         run: |
