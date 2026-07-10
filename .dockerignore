@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+.git
+.github
+.env
+.env.*
+!.env.example
+!.env.production.example
+client/dist
+server/storage
+storage
+.wwebjs_cache
+server/.wwebjs_cache
+coverage
+.DS_Store

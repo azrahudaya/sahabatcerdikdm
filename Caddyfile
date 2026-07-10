@@ -1,0 +1,4 @@
+sahabatcerdikdm.com, www.sahabatcerdikdm.com {
+	encode zstd gzip
+	reverse_proxy app:5000
+}

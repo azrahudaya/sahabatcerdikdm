@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+coverage
+client/dist
+server/storage
+storage
+.wwebjs_cache
+server/.wwebjs_cache
+
+.env
+.env.*
+!.env.example
+!.env.production.example
+!server/.env.example
