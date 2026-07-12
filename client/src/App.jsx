@@ -67,6 +67,7 @@ export default function App() {
             <Route path="/lupa-password" element={<ForgotPasswordPage />} />
             <Route path="/reset-password" element={<ResetPasswordPage />} />
             <Route path="/verifikasi-email" element={<VerifyEmailPage />} />
+            <Route path="/tentang" element={<TopicPage page={siteContent.pages.tentang} />} />
             <Route path="/tentang-dm" element={<TopicPage page={siteContent.pages.tentangDm} />} />
             <Route
               path="/pencegahan-dm"
@@ -75,6 +76,7 @@ export default function App() {
             <Route path="/gizi-seimbang" element={<TopicPage page={siteContent.pages.giziSeimbang} />} />
             <Route path="/syarat-ketentuan" element={<TopicPage page={siteContent.pages.syaratKetentuan} />} />
             <Route path="/privasi-data" element={<TopicPage page={siteContent.pages.privasiData} />} />
+            <Route path="/kontak" element={<TopicPage page={siteContent.pages.kontak} />} />
             <Route
               path="/deteksi-dini"
               element={

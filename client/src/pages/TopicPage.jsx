@@ -58,13 +58,23 @@ export default function TopicPage({ page }) {
           </div>
           <div className="topic-next-actions">
             {page.nextActions.map((action, index) => (
-              <Link
-                className={`button ${index === 0 ? "button-primary" : "button-secondary"}`}
-                key={action.label}
-                to={action.to}
-              >
-                {action.label}
-              </Link>
+              action.to.startsWith("mailto:") ? (
+                <a
+                  className={`button ${index === 0 ? "button-primary" : "button-secondary"}`}
+                  href={action.to}
+                  key={action.label}
+                >
+                  {action.label}
+                </a>
+              ) : (
+                <Link
+                  className={`button ${index === 0 ? "button-primary" : "button-secondary"}`}
+                  key={action.label}
+                  to={action.to}
+                >
+                  {action.label}
+                </Link>
+              )
             ))}
           </div>
         </div>

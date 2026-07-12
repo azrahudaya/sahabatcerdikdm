@@ -459,6 +459,43 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.24);
 }
 
+.cookie-consent {
+  position: fixed;
+  z-index: 70;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: min(calc(100% - 36px), 760px);
+  margin: 0 auto;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  box-shadow: var(--shadow-lg);
+}
+
+.cookie-consent p {
+  margin: 0;
+  color: var(--muted-strong);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.cookie-consent a {
+  color: var(--blue-deep);
+  font-weight: 800;
+}
+
+.cookie-consent .button {
+  flex: 0 0 auto;
+  min-height: 40px;
+  padding: 10px 14px;
+}
+
 .hero-media {
   display: flex;
   align-items: stretch;
@@ -4508,12 +4545,25 @@ img {
 }
 
 @media (max-width: 720px) {
+  .cookie-consent {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .cookie-consent .button {
+    width: 100%;
+  }
+
   .has-app-nav .site-main {
     padding-bottom: calc(168px + env(safe-area-inset-bottom));
   }
 
   .has-app-nav .site-footer {
     padding-bottom: 72px;
+  }
+
+  .has-app-nav .cookie-consent {
+    bottom: calc(84px + env(safe-area-inset-bottom));
   }
 
   .has-app-nav input,

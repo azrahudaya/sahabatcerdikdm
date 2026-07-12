@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 
 import { useAuth } from "../auth/AuthContext.jsx";
+import CookieConsent from "./CookieConsent.jsx";
 
 const primaryHeaderLinks = [
   { label: "Beranda", to: "/" },
@@ -227,6 +228,8 @@ export default function SiteLayout({ navigation, brand, phases }) {
         <Outlet />
       </main>
 
+      <CookieConsent />
+
       {isAuthenticated ? (
         <nav className="mobile-app-nav" aria-label="Navigasi aplikasi">
           {mobileAppLinks.map((item) => (
@@ -285,9 +288,6 @@ export default function SiteLayout({ navigation, brand, phases }) {
               </li>
               <li>
                 <NavLink to="/dashboard/reminder-harian">Reminder WhatsApp</NavLink>
-              </li>
-              <li>
-                <NavLink to="/dashboard/mitos-fakta">Mitos & Fakta</NavLink>
               </li>
               <li>
                 <NavLink to="/dashboard/umpan-balik">Umpan Balik</NavLink>
