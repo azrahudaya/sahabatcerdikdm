@@ -15,7 +15,7 @@ export const siteContent = {
   home: {
     title: "Teman ringkas mengenali risiko DM.",
     description:
-      "Sahabat CERDIK DM membantu pengguna membaca informasi penting, cek risiko awal, dan menjaga kebiasaan sehat lewat reminder sederhana.",
+      "Baca info penting, cek risiko awal, dan jaga kebiasaan sehat lewat reminder sederhana.",
     primaryCta: {
       label: "Masuk ke aplikasi",
       to: "/dashboard"
@@ -73,7 +73,7 @@ export const siteContent = {
       icon: "FK",
       iconSrc: "/menu-icons/fk.png",
       tone: "sage-soft",
-      description: "Pilih materi sesuai kondisi pengguna.",
+      description: "Pilih materi sesuai kondisi Anda.",
       to: "#fase-kehidupan"
     },
     {
@@ -82,7 +82,7 @@ export const siteContent = {
       icon: "ME",
       iconSrc: "/menu-icons/me.png",
       tone: "blush",
-      description: "Video dan infografis pendek.",
+      description: "Video dan infografis ringkas.",
       to: "/dashboard/media-edukasi"
     }
   ],
@@ -217,7 +217,7 @@ export const siteContent = {
       {
         id: "menu-utama",
         title: "Menu Utama",
-        description: "Akses cepat ke materi inti aplikasi.",
+        description: "Materi inti yang paling sering dibutuhkan.",
         items: [
           {
             id: "tentang-dm",
@@ -268,7 +268,7 @@ export const siteContent = {
       {
         id: "fase-kehidupan",
         title: "Fase Kehidupan",
-        description: "Pilih materi yang paling dekat dengan kondisi pengguna.",
+        description: "Pilih materi yang paling dekat dengan kondisi Anda.",
         items: [
           {
             id: "remaja",
@@ -315,7 +315,7 @@ export const siteContent = {
       {
         id: "fitur-pendukung",
         title: "Fitur Pendukung",
-        description: "Pelengkap aplikasi berdasarkan struktur docs.",
+        description: "Menu tambahan.",
         items: [
           {
             id: "media-edukasi",
@@ -323,7 +323,7 @@ export const siteContent = {
             icon: "ME",
             iconSrc: "/menu-icons/me.png",
             tone: "blush",
-            description: "Video pendek dan infografis DM.",
+            description: "Video dan infografis ringkas.",
             to: "/dashboard/media-edukasi"
           },
           {
@@ -356,7 +356,7 @@ export const siteContent = {
             label: "Tentang Aplikasi",
             icon: "APP",
             tone: "coral-deep",
-            description: "Ringkasan fungsi aplikasi dan arah pengembangannya.",
+            description: "Kenali fungsi aplikasi.",
             to: "/dashboard/tentang-aplikasi"
           },
           {
@@ -364,7 +364,7 @@ export const siteContent = {
             label: "Tim Pengembang",
             icon: "TP",
             tone: "blush",
-            description: "Pihak penyusun dan validator materi.",
+            description: "Tim penyusun materi.",
             to: "/dashboard/tim-pengembang"
           },
           {
@@ -372,7 +372,7 @@ export const siteContent = {
             label: "Sumber Referensi",
             icon: "SR",
             tone: "sage-soft",
-            description: "Rujukan materi dan batas informasi.",
+            description: "Sumber dan batasan materi.",
             to: "/dashboard/sumber-referensi"
           },
           {
@@ -398,7 +398,7 @@ export const siteContent = {
   dashboardPages: {
     mediaEdukasi: {
       title: "Media Edukasi",
-      intro: "Video dan infografis membantu pengguna menangkap inti materi tanpa membaca terlalu panjang.",
+      intro: "Video dan infografis singkat untuk memahami DM lebih cepat.",
       placeholders: [
         {
           title: "Video edukasi DM remaja",
@@ -429,15 +429,15 @@ export const siteContent = {
       points: [
         {
           title: "Video edukasi",
-          body: "Prioritas awal mengikuti dokumen: edukasi DM remaja, edukasi DM ibu hamil, minuman pencegahan remaja, dan camilan sehat ibu hamil."
+          body: "Mulai dari video remaja, ibu hamil, minuman rendah gula, dan camilan sehat."
         },
         {
           title: "Infografis ringkas",
-          body: "Materi visual singkat cocok untuk gejala, pencegahan, dan langkah CERDIK."
+          body: "Ringkasan visual untuk gejala, pencegahan, dan langkah CERDIK."
         },
         {
           title: "Audio relaksasi",
-          body: "Dapat ditambahkan sebagai media pendukung pilar Kelola Stres setelah naskah dan validasinya siap."
+          body: "Bisa ditambahkan nanti untuk latihan kelola stres."
         }
       ]
     },
@@ -468,7 +468,7 @@ export const siteContent = {
     },
     tentangAplikasi: {
       title: "Tentang Aplikasi",
-      intro: "Sahabat CERDIK DM disusun sebagai aplikasi informasi kesehatan perempuan dengan fokus pencegahan Diabetes Melitus.",
+      intro: "Aplikasi ini membantu membaca materi DM, cek risiko awal, dan mengatur reminder sehat.",
       placeholders: [
         {
           title: "Diagram alur aplikasi",
@@ -478,22 +478,22 @@ export const siteContent = {
       ],
       points: [
         {
-          title: "Berbasis fase kehidupan",
-          body: "Materi dibagi agar lebih relevan untuk remaja, usia reproduksi, ibu hamil, ibu nifas, dan usia lanjut."
+          title: "Materi sesuai fase",
+          body: "Pilih materi untuk remaja, usia reproduksi, ibu hamil, ibu nifas, atau usia lanjut."
         },
         {
-          title: "Fokus edukasi",
-          body: "Aplikasi ini membantu pengguna memahami informasi, bukan menggantikan pemeriksaan tenaga kesehatan."
+          title: "Cek risiko awal",
+          body: "Skrining membantu mengenali risiko lebih awal. Hasilnya bukan diagnosis."
         },
         {
-          title: "Arah pengembangan",
-          body: "Dashboard, reminder, dan media edukasi bisa terus diperluas mengikuti kebutuhan produk."
+          title: "Reminder sehat",
+          body: "Atur pengingat sederhana agar kebiasaan CERDIK lebih mudah dijaga."
         }
       ]
     },
     timPengembang: {
       title: "Tim Pengembang",
-      intro: "Kenali pihak yang menyusun materi, memvalidasi isi, dan mengembangkan aplikasi.",
+      intro: "Informasi tim penyusun dan validator materi Sahabat CERDIK DM.",
       placeholders: [
         {
           title: "Foto atau ilustrasi tim",
@@ -504,37 +504,37 @@ export const siteContent = {
       points: [
         {
           title: "Penyusun materi",
-          body: "Bagian ini dapat diisi nama penyusun materi edukasi DM dan fase kehidupan perempuan."
+          body: "Informasi penyusun materi akan dilengkapi."
         },
         {
           title: "Validator kesehatan",
-          body: "Sebelum publikasi, materi sebaiknya ditinjau oleh dosen, bidan, atau tenaga kesehatan yang relevan."
+          body: "Materi sebaiknya ditinjau tenaga kesehatan sebelum dipakai luas."
         },
         {
           title: "Pengembang aplikasi",
-          body: "Bagian ini dapat mencatat pihak yang mengembangkan website, visual, dan media interaktif."
+          body: "Informasi pengembang website akan dilengkapi."
         }
       ]
     },
     sumberReferensi: {
       title: "Sumber Referensi",
-      intro: "Catatan sumber awal yang dipakai untuk menyusun MVP edukasi. Materi tetap perlu ditinjau oleh validator kesehatan sebelum rilis publik.",
+      intro: "Sumber awal untuk materi edukasi dan skrining. Materi medis tetap perlu ditinjau tenaga kesehatan.",
       points: [
         {
-          title: "Basis materi",
-          body: "Konten MVP disusun dari dokumen menu aplikasi, materi diabetes melitus, pencegahan DM, serta edukasi berdasarkan siklus kehidupan perempuan."
+          title: "Materi awal",
+          body: "Materi disusun dari rujukan edukasi DM, pencegahan, dan fase kehidupan perempuan."
         },
         {
-          title: "Metode FINDRISC",
-          body: "Skrining memakai FINDRISC sebagai alat non-lab untuk memperkirakan risiko DM tipe 2 pada pengguna dewasa. Hasilnya bukan diagnosis."
+          title: "FINDRISC",
+          body: "FINDRISC dipakai untuk skrining non-lab risiko DM tipe 2 pada pengguna dewasa. Ini bukan diagnosis."
         },
         {
           title: "Batasan medis",
-          body: "Ibu hamil, remaja, pengguna yang sudah didiagnosis DM, atau pengguna dengan keluhan menetap diarahkan ke materi dan pemeriksaan tenaga kesehatan, bukan skor risiko umum."
+          body: "Remaja, ibu hamil, pengguna dengan diagnosis DM, atau keluhan menetap perlu arahan tenaga kesehatan."
         },
         {
-          title: "Perlu validasi",
-          body: "Angka ambang, anjuran fase khusus, serta konten herbal atau teknik relaksasi dari dokumen perlu review tenaga kesehatan sebelum dipublikasikan sebagai materi final."
+          title: "Perlu ditinjau",
+          body: "Ambang, anjuran fase khusus, herbal, dan relaksasi perlu review tenaga kesehatan sebelum menjadi materi final."
         }
       ],
       links: [
@@ -795,8 +795,8 @@ export const siteContent = {
     pencegahanDm: {
       title: "Pencegahan Diabetes Melitus",
       intro:
-        "Pencegahan DM dimulai dari kebiasaan yang bisa dijalankan: CERDIK, gerak rutin, makan lebih sadar, dan cek berkala.",
-      callout: "Target besar dari pencegahan primer adalah membangun kebiasaan sehat sebelum komplikasi muncul, bukan menunggu gejala berat.",
+        "Mulai dari kebiasaan yang bisa dijalankan: cek kesehatan, gerak rutin, makan lebih sadar, dan istirahat cukup.",
+      callout: "Tujuannya bukan berubah total dalam sehari, tapi membangun kebiasaan kecil sebelum keluhan muncul.",
       visual: {
         title: "Ilustrasi langkah CERDIK",
         size: "1200 x 800 px",
@@ -805,17 +805,17 @@ export const siteContent = {
       quickFacts: [
         {
           label: "01",
-          title: "Primer",
+          title: "Cegah sejak awal",
           body: "Mencegah risiko sejak awal lewat kebiasaan sehat dan skrining ringan."
         },
         {
           label: "02",
-          title: "Sekunder",
-          body: "Mengendalikan kondisi agar komplikasi bisa dideteksi lebih dini."
+          title: "Pantau risiko",
+          body: "Cek kondisi secara berkala bila faktor risiko mulai terlihat."
         },
         {
           label: "03",
-          title: "Tersier",
+          title: "Jaga kualitas hidup",
           body: "Menjaga kualitas hidup saat komplikasi sudah terjadi."
         }
       ],
@@ -825,8 +825,8 @@ export const siteContent = {
       ],
       sections: [
         {
-          title: "Pencegahan primer",
-          body: "Ditujukan bagi perempuan yang memiliki faktor risiko atau prediabetes, dengan fokus pada perubahan gaya hidup dan skrining mandiri ringan.",
+          title: "Cegah sejak awal",
+          body: "Untuk Anda yang punya faktor risiko atau ingin mulai lebih sehat. Fokusnya kebiasaan harian dan cek sederhana.",
           bullets: [
             "Cek kesehatan berkala",
             "Aktivitas fisik rutin",
@@ -835,24 +835,24 @@ export const siteContent = {
           ]
         },
         {
-          title: "Pencegahan sekunder",
-          body: "Berlaku pada pasien yang sudah terdiagnosis DM, dengan fokus pengendalian gula darah dan deteksi komplikasi secara berkala.",
+          title: "Pantau bila sudah berisiko",
+          body: "Jika pernah mendapat hasil pemeriksaan tinggi atau diagnosis DM, kontrol rutin jadi penting.",
           bullets: [
             "Pantau tekanan darah, profil lipid, mata, ginjal, saraf, dan kaki.",
-            "Kendalikan faktor risiko lain secara komprehensif."
+            "Ikuti arahan tenaga kesehatan untuk menjaga faktor risiko lain."
           ]
         },
         {
-          title: "Pencegahan tersier",
-          body: "Ditujukan untuk mencegah kecacatan lebih lanjut dan mempertahankan kualitas hidup pada penyandang DM yang sudah mengalami komplikasi.",
+          title: "Jaga kualitas hidup",
+          body: "Saat komplikasi sudah muncul, fokusnya adalah mencegah kondisi bertambah berat dan tetap bisa beraktivitas.",
           bullets: [
-            "Perlu layanan kesehatan yang terkoordinasi.",
+            "Perlu kontrol yang teratur bersama tenaga kesehatan.",
             "Rehabilitasi dini membantu menekan dampak lanjutan."
           ]
         },
         {
-          title: "Pencegahan berbasis fase kehidupan",
-          body: "Perempuan memiliki kebutuhan pencegahan yang berubah mulai dari remaja sampai usia lanjut.",
+          title: "Pencegahan sesuai fase",
+          body: "Kebutuhan pencegahan berubah mengikuti fase kehidupan.",
           bullets: [
             "Remaja fokus pada pencegahan obesitas dan gaya hidup aktif.",
             "Ibu hamil fokus pada skrining DM gestasional 24-28 minggu.",
@@ -1078,22 +1078,22 @@ export const siteContent = {
       ]
     },
     deteksiDini: {
-      title: "Skrining awal yang sederhana dan mudah dipahami",
+      title: "Cek risiko awal dengan mudah",
       intro:
-        "Bagian ini membantu pengguna mengenali risiko lebih awal sebelum memutuskan pemeriksaan lanjutan.",
-      callout: "Hasil skrining bersifat edukatif dan tidak menggantikan diagnosis dokter atau tenaga kesehatan.",
+        "Isi data dasar dan beberapa pertanyaan untuk mengenali risiko lebih awal.",
+      callout: "Ini skrining awal, bukan diagnosis. Jika ada keluhan, lanjut periksa ke tenaga kesehatan.",
       sections: [
         {
           title: "Kuis faktor risiko",
-          body: "Pertanyaan FINDRISC menyorot usia, IMT, lingkar perut, aktivitas fisik, konsumsi sayur/buah, obat tekanan darah, riwayat gula darah tinggi, dan riwayat keluarga DM.",
+          body: "Pertanyaan FINDRISC melihat usia, IMT, lingkar perut, aktivitas, pola makan, obat tekanan darah, dan riwayat DM.",
           bullets: [
-            "Gate awal memisahkan kondisi khusus seperti kehamilan, usia di bawah 18 tahun, diagnosis DM sebelumnya, atau keluhan yang perlu diperiksa.",
-            "Hasil akhir digunakan sebagai arahan edukasi dan tindak lanjut, bukan diagnosis."
+            "Kondisi khusus seperti hamil, usia di bawah 18 tahun, diagnosis DM, atau keluhan menetap diarahkan ke halaman yang lebih sesuai.",
+            "Hasil akhir dipakai untuk menentukan langkah berikutnya."
           ]
         },
         {
           title: "Kalkulator IMT",
-          body: "Pengguna memasukkan tinggi dan berat badan untuk melihat apakah berat badan sudah masuk rentang sehat.",
+          body: "Masukkan tinggi dan berat badan untuk melihat gambaran IMT.",
           bullets: [
             "IMT membantu membaca risiko umum terkait berat badan.",
             "Perlu dibaca bersama lingkar perut dan gaya hidup."
@@ -1101,15 +1101,15 @@ export const siteContent = {
         },
         {
           title: "Lingkar perut",
-          body: "Panduan ukur mandiri membantu pengguna perempuan memeriksa obesitas sentral dengan batas waspada 80 cm atau lebih.",
+          body: "Lingkar perut membantu melihat risiko obesitas sentral. Untuk perempuan, 80 cm atau lebih perlu lebih waspada.",
           bullets: [
             "Lakukan pengukuran pada posisi dan waktu yang konsisten.",
-            "Gunakan angka ini sebagai pemicu evaluasi gaya hidup."
+            "Gunakan angka ini untuk mulai mengevaluasi kebiasaan harian."
           ]
         },
         {
           title: "Kapan cek gula darah",
-          body: "Pemeriksaan lanjutan dianjurkan bila pengguna memiliki kombinasi faktor risiko, gejala klasik DM, atau kondisi khusus seperti kehamilan dan riwayat DM gestasional.",
+          body: "Cek lanjutan dianjurkan bila ada beberapa faktor risiko, gejala menetap, kehamilan, atau riwayat DM gestasional.",
           bullets: [
             "Segera periksa jika ada gejala klasik yang menetap.",
             "Ibu hamil perlu memperhatikan jadwal skrining 24-28 minggu."

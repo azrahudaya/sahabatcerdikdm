@@ -332,7 +332,7 @@ export default function DeteksiDiniPage({ page }) {
           <span>01</span>
           <div>
             <h2>Sebelum mulai</h2>
-            <p>Pastikan skrining yang dipakai sesuai kondisi pengguna.</p>
+            <p>Pastikan FINDRISC sesuai untuk kondisi Anda.</p>
           </div>
         </div>
 
@@ -537,7 +537,7 @@ export default function DeteksiDiniPage({ page }) {
           <span>{String(activeStep + 1).padStart(2, "0")}</span>
           <div>
             <h2>Hasil skrining</h2>
-            <p>Gunakan hasil ini sebagai pengarah tindak lanjut, bukan diagnosis.</p>
+            <p>Gunakan hasil ini untuk menentukan langkah berikutnya. Ini bukan diagnosis.</p>
           </div>
         </div>
 
@@ -694,7 +694,7 @@ export default function DeteksiDiniPage({ page }) {
             <section>
               <span>Estimasi risiko 10 tahun</span>
               <strong>{riskResult.estimate}</strong>
-              <p>Estimasi ini berasal dari kategori FINDRISC dan bukan diagnosis medis.</p>
+              <p>Ini estimasi FINDRISC, bukan diagnosis.</p>
               <small>IMT {bmiText}; lingkar perut {waistNumber > 0 ? `${waistNumber} cm` : "belum diisi"}</small>
             </section>
           </div>
@@ -720,8 +720,8 @@ export default function DeteksiDiniPage({ page }) {
           </section>
 
           <p className="print-report-note">
-            Report ini adalah hasil skrining mandiri awal dengan FINDRISC dan bukan diagnosis. Gunakan
-            sebagai bahan diskusi saat berkonsultasi dengan tenaga kesehatan.
+            Report ini adalah hasil skrining awal FINDRISC, bukan diagnosis. Gunakan saat berdiskusi
+            dengan tenaga kesehatan.
           </p>
         </div>
       </div>

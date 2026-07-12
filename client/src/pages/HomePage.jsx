@@ -96,7 +96,7 @@ export default function HomePage({ content, phases, cerdik, entryModules }) {
       <section className="content-section content-shell" id="fase-kehidupan">
         <div className="section-heading">
           <h2>Materi mengikuti fase kehidupan.</h2>
-          <p>Pengguna bisa membaca bagian yang paling sesuai dengan kondisinya saat ini.</p>
+          <p>Pilih fase yang paling dekat dengan kondisi Anda.</p>
         </div>
 
         <div className="phase-list">

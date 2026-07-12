@@ -34,8 +34,8 @@ export default function DashboardPage({ dashboard, phases = [] }) {
           ...riskItem,
           label: "Cek risiko",
           description: latestScreening
-            ? "Buka hasil terakhir atau isi ulang skrining."
-            : "Isi skrining singkat untuk mulai mengenali risiko."
+            ? "Lihat hasil terakhir atau isi ulang."
+            : "Isi skrining singkat."
         }
       : null,
     {
@@ -44,14 +44,14 @@ export default function DashboardPage({ dashboard, phases = [] }) {
       icon: "FK",
       iconSrc: "/menu-icons/fk.png",
       tone: "sage-soft",
-      description: selectedPhase ? selectedPhase.summary : "Pilih fase agar materi lebih dekat dengan kondisi Anda.",
+      description: selectedPhase ? selectedPhase.summary : "Pilih fase agar materi lebih pas untuk Anda.",
       to: selectedPhase ? `/fase/${selectedPhase.slug}` : "/dashboard#pilih-fase"
     },
     reminderItem
       ? {
           ...reminderItem,
           label: "Reminder",
-          description: "Atur pengingat WhatsApp untuk kebiasaan CERDIK."
+          description: "Atur pengingat CERDIK lewat WhatsApp."
         }
       : null
   ].filter(Boolean);
@@ -133,7 +133,7 @@ export default function DashboardPage({ dashboard, phases = [] }) {
     <section className="content-section content-shell">
       <PageMeta
         title="Dashboard"
-        description="Pusat menu aplikasi Sahabat CERDIK DM untuk edukasi, fase kehidupan, dan skrining."
+        description="Dashboard untuk cek risiko, materi fase, dan reminder."
       />
 
       <div className="dashboard-shell dashboard-app-shell">
@@ -141,10 +141,8 @@ export default function DashboardPage({ dashboard, phases = [] }) {
           <div>
             <span>Dashboard</span>
             <h1>Halo{user?.name ? `, ${user.name}` : ""}.</h1>
-            <p>
-              Mulai dari satu langkah kecil: cek risiko, baca materi yang sesuai fase, atau aktifkan reminder.
-            </p>
-            {moduleLabel ? <p className="dashboard-hint">Anda tadi memilih menu {moduleLabel}.</p> : null}
+            <p>Mau mulai dari mana hari ini?</p>
+            {moduleLabel ? <p className="dashboard-hint">Lanjut dari menu {moduleLabel}.</p> : null}
             {notice ? <p className="profile-form-success">{notice}</p> : null}
           </div>
         </div>
@@ -203,7 +201,7 @@ export default function DashboardPage({ dashboard, phases = [] }) {
             <p>
               {selectedPhase
                 ? selectedPhase.summary
-                : "Agar materi yang muncul terasa lebih dekat dengan kondisi pengguna saat ini."}
+                : "Pilih fase agar materi terasa lebih pas untuk Anda."}
             </p>
           </div>
 
