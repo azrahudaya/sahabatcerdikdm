@@ -1503,31 +1503,31 @@ img {
 .public-about-note,
 .public-contact-note {
   margin: 0;
-  padding: 18px;
+  padding: 6px 0 6px 16px;
   border-left: 4px solid var(--blue);
-  border-radius: var(--radius-md);
   color: var(--muted-strong);
-  background: #ffffff;
   line-height: 1.55;
 }
 
 .public-about-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-columns: 1fr;
+  gap: 0;
+  max-width: 980px;
   margin-top: 24px;
 }
 
-.public-about-card,
 .public-contact-panel,
 .public-contact-list article {
-  border: 1px solid var(--line-soft);
-  border-radius: var(--radius-md);
-  background: #ffffff;
+  border-top: 1px solid var(--line-soft);
 }
 
 .public-about-card {
-  padding: 22px;
+  display: grid;
+  grid-template-columns: minmax(180px, 0.42fr) minmax(0, 1fr);
+  gap: 22px;
+  padding: 24px 0;
+  border-top: 1px solid var(--line-soft);
 }
 
 .public-about-card h2,
@@ -1584,7 +1584,9 @@ img {
 }
 
 .public-contact-panel {
-  padding: 22px;
+  padding: 0 0 0 18px;
+  border-top: 0;
+  border-left: 4px solid var(--blue);
 }
 
 .public-contact-panel span {
@@ -1611,7 +1613,7 @@ img {
 }
 
 .public-contact-list article {
-  padding: 22px;
+  padding: 22px 0 0;
 }
 
 .info-card-grid {
@@ -4633,6 +4635,11 @@ img {
 
   .public-about-grid {
     grid-template-columns: 1fr;
+  }
+
+  .public-about-card {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .public-about-hero,

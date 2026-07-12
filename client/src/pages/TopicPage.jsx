@@ -63,7 +63,7 @@ export default function TopicPage({ page }) {
           <div className="public-contact-panel">
             <span>Email</span>
             <strong>hudaya.azra@gmail.com</strong>
-            <p>Untuk pertanyaan umum, koreksi materi, bantuan akun, atau permintaan terkait data.</p>
+            <p>Pertanyaan, koreksi materi, bantuan akun, atau permintaan data.</p>
             {page.nextActions ? (
               <div className="public-contact-actions">
                 {page.nextActions.map((action, index) => (

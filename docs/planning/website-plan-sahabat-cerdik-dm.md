@@ -8,14 +8,14 @@ Sahabat CERDIK DM
 
 Rencana ini disusun dari dokumen berikut yang ada di repo:
 
-- `1. Beranda.docx`
-- `2.1 Tentang Diabetes Melitus.docx`
-- `2.2 Pencegahan DM.docx`
-- `2.3.2   Reproduksi Dewasa (Edukasi Berdasarkan siklus).docx`
-- `2.3.3 Ibu Hamil.docx`
-- `2.3.4 Ibu Nifas dan Menyusui.docx`
-- `2.3.5 Reproduksi Usia Lanjut.docx`
-- `Tabel Menu Aplikasi Paket Media Edukasi DM.docx`
+- `../source-docx/1. Beranda.docx`
+- `../source-docx/2.1 Tentang Diabetes Melitus.docx`
+- `../source-docx/2.2 Pencegahan DM.docx`
+- `../source-docx/2.3.2   Reproduksi Dewasa (Edukasi Berdasarkan siklus).docx`
+- `../source-docx/2.3.3 Ibu Hamil.docx`
+- `../source-docx/2.3.4 Ibu Nifas dan Menyusui.docx`
+- `../source-docx/2.3.5 Reproduksi Usia Lanjut.docx`
+- `../source-docx/Tabel Menu Aplikasi Paket Media Edukasi DM.docx`
 
 Dokumen ini sengaja menjaga arah website tetap sesuai source. Jika ada fitur atau halaman yang belum memiliki materi rinci di dokumen sumber, bagian itu ditandai sebagai `perlu materi lanjutan`.
 
@@ -64,7 +64,7 @@ Karakter website:
 
 ## Struktur Utama Website
 
-Struktur ini mengikuti `Tabel Menu Aplikasi Paket Media Edukasi DM.docx`.
+Struktur ini mengikuti `../source-docx/Tabel Menu Aplikasi Paket Media Edukasi DM.docx`.
 
 ### 1. Beranda
 

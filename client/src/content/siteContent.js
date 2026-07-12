@@ -717,9 +717,9 @@ export const siteContent = {
       layout: "about",
       title: "Tentang Sahabat CERDIK DM",
       intro:
-        "Sahabat CERDIK DM membantu perempuan membaca informasi DM, mengenali risiko awal, dan menjaga kebiasaan sehat.",
+        "Teman ringkas untuk membaca informasi DM, cek risiko awal, dan menjaga kebiasaan sehat.",
       callout:
-        "Aplikasi ini bersifat edukasi. Hasil skrining dan reminder tidak menggantikan pemeriksaan atau saran tenaga kesehatan.",
+        "Edukasi dan skrining awal. Bukan pengganti pemeriksaan tenaga kesehatan.",
       nextActions: [
         { label: "Mulai cek risiko", to: "/deteksi-dini" },
         { label: "Hubungi kami", to: "/kontak" }
@@ -728,31 +728,28 @@ export const siteContent = {
         {
           title: "Untuk siapa",
           body:
-            "Materi disusun untuk perempuan pada beberapa fase kehidupan, dari remaja sampai usia lanjut.",
+            "Untuk perempuan di beberapa fase kehidupan.",
           bullets: [
-            "Pengguna bisa membaca materi sesuai fase yang paling dekat dengan kondisinya.",
-            "Ibu hamil, pengguna dengan keluhan menetap, atau riwayat DM tetap perlu arahan tenaga kesehatan.",
-            "Remaja dapat memakai aplikasi sebagai pengantar kebiasaan sehat dengan pendampingan orang tua atau pendamping."
+            "Pilih materi sesuai kondisi saat ini.",
+            "Kondisi khusus tetap perlu arahan tenaga kesehatan."
           ]
         },
         {
           title: "Yang bisa dilakukan",
           body:
-            "Aplikasi menyediakan materi ringkas, skrining awal FINDRISC untuk pengguna yang sesuai, dan reminder CERDIK.",
+            "Baca materi singkat, isi skrining awal, dan atur reminder.",
           bullets: [
-            "Baca dasar DM, pencegahan, gizi seimbang, dan materi fase kehidupan.",
-            "Isi skrining awal untuk melihat faktor risiko yang perlu diperhatikan.",
-            "Atur reminder WhatsApp agar kebiasaan sehat lebih mudah diingat."
+            "Materi DM, pencegahan, gizi, dan fase kehidupan.",
+            "Reminder WhatsApp untuk kebiasaan CERDIK."
           ]
         },
         {
           title: "Tim pengembang",
           body:
-            "Sahabat CERDIK DM dikembangkan sebagai aplikasi edukasi digital yang sederhana dan mudah digunakan.",
+            "Dikembangkan sebagai aplikasi edukasi digital yang sederhana.",
           bullets: [
-            "Tim penyusun materi merapikan isi edukasi agar singkat dan jelas.",
-            "Materi kesehatan sebaiknya tetap ditinjau tenaga kesehatan sebelum dipakai luas.",
-            "Pengembang aplikasi menyiapkan alur web, dashboard, skrining, reminder, dan pengelolaan akun."
+            "Materi dirapikan agar singkat dan jelas.",
+            "Konten kesehatan tetap perlu ditinjau sebelum dipakai luas."
           ]
         }
       ]
@@ -1122,9 +1119,9 @@ export const siteContent = {
       layout: "contact",
       title: "Kontak",
       intro:
-        "Hubungi pengelola Sahabat CERDIK DM untuk pertanyaan, koreksi materi, atau bantuan akun.",
+        "Untuk pertanyaan, koreksi materi, bantuan akun, atau permintaan terkait data.",
       callout:
-        "Jangan kirim data medis sensitif lewat pesan umum. Untuk keluhan kesehatan, tetap hubungi tenaga kesehatan.",
+        "Untuk keluhan kesehatan, tetap hubungi tenaga kesehatan.",
       nextActions: [
         { label: "Kirim email", to: "mailto:hudaya.azra@gmail.com" },
         { label: "Baca Privasi Data", to: "/privasi-data" }
@@ -1133,21 +1130,19 @@ export const siteContent = {
         {
           title: "Email",
           body:
-            "Gunakan email untuk pertanyaan umum, koreksi materi, permintaan bantuan akun, atau permintaan terkait data.",
+            "Gunakan email untuk kebutuhan umum terkait aplikasi.",
           bullets: [
             "Alamat: hudaya.azra@gmail.com",
-            "Sertakan nama akun dan ringkasan kebutuhan agar lebih mudah dicek.",
-            "Untuk permintaan data, gunakan email yang sama dengan akun bila memungkinkan."
+            "Sertakan nama akun dan ringkasan kebutuhan."
           ]
         },
         {
           title: "Batas bantuan",
           body:
-            "Kontak ini tidak menggantikan konsultasi medis, diagnosis, atau layanan darurat.",
+            "Kontak ini tidak menggantikan konsultasi medis atau layanan darurat.",
           bullets: [
-            "Jika ada keluhan seperti sering haus, sering buang air kecil, luka sulit sembuh, atau penglihatan kabur menetap, periksa ke tenaga kesehatan.",
             "Untuk kondisi darurat, hubungi layanan kesehatan terdekat.",
-            "Masukan produk akan dipakai untuk memperbaiki materi dan alur aplikasi."
+            "Masukan produk dipakai untuk memperbaiki materi dan alur aplikasi."
           ]
         }
       ]

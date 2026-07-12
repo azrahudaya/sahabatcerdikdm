@@ -6,8 +6,9 @@ Fondasi awal website edukasi pencegahan Diabetes Melitus pada perempuan, berbasi
 
 - `client/` - aplikasi React
 - `server/` - API Express
-- `website-plan-sahabat-cerdik-dm.md` - ringkasan produk dan MVP
-- `design.md` - arah visual
+- `docs/planning/` - rencana produk, flow, dan arah visual
+- `docs/audits/` - audit konten, UI/UX, dan copywriting
+- `docs/source-docx/` - dokumen sumber materi
 
 ## Stack
 
@@ -16,7 +17,7 @@ Fondasi awal website edukasi pencegahan Diabetes Melitus pada perempuan, berbasi
 - Vite
 - React Router
 - PostgreSQL untuk user register/login
-- CSS kustom dengan token desain dari `design.md`
+- CSS kustom dengan token desain dari `docs/planning/design.md`
 
 ## Menjalankan Project
 
@@ -76,7 +77,7 @@ Starter ini sudah mencakup:
 - struktur monorepo ringan
 - API Express dasar
 - register dan login user dengan password hash
-- homepage React yang mengikuti `design.md`
+- homepage React yang mengikuti `docs/planning/design.md`
 - route untuk halaman inti:
   - Beranda
   - Tentang DM

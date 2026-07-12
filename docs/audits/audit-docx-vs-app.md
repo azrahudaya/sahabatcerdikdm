@@ -6,14 +6,14 @@ Tanggal audit: 23 Juni 2026
 
 Audit ini membandingkan aplikasi React/Express yang ada saat ini dengan delapan dokumen Word di root proyek:
 
-- `1. Beranda.docx`
-- `2.1 Tentang Diabetes Melitus.docx`
-- `2.2 Pencegahan DM.docx`
-- `2.3.2   Reproduksi Dewasa (Edukasi Berdasarkan siklus).docx`
-- `2.3.3 Ibu Hamil.docx`
-- `2.3.4 Ibu Nifas dan Menyusui.docx`
-- `2.3.5 Reproduksi Usia Lanjut.docx`
-- `Tabel Menu Aplikasi Paket Media Edukasi DM.docx`
+- `../source-docx/1. Beranda.docx`
+- `../source-docx/2.1 Tentang Diabetes Melitus.docx`
+- `../source-docx/2.2 Pencegahan DM.docx`
+- `../source-docx/2.3.2   Reproduksi Dewasa (Edukasi Berdasarkan siklus).docx`
+- `../source-docx/2.3.3 Ibu Hamil.docx`
+- `../source-docx/2.3.4 Ibu Nifas dan Menyusui.docx`
+- `../source-docx/2.3.5 Reproduksi Usia Lanjut.docx`
+- `../source-docx/Tabel Menu Aplikasi Paket Media Edukasi DM.docx`
 
 Status yang digunakan:
 
