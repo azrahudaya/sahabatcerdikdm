@@ -714,6 +714,7 @@ export const siteContent = {
   },
   pages: {
     tentang: {
+      layout: "about",
       title: "Tentang Sahabat CERDIK DM",
       intro:
         "Sahabat CERDIK DM membantu perempuan membaca informasi DM, mengenali risiko awal, dan menjaga kebiasaan sehat.",
@@ -1118,6 +1119,7 @@ export const siteContent = {
       ]
     },
     kontak: {
+      layout: "contact",
       title: "Kontak",
       intro:
         "Hubungi pengelola Sahabat CERDIK DM untuk pertanyaan, koreksi materi, atau bantuan akun.",
