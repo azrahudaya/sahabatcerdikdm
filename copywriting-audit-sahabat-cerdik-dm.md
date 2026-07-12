@@ -682,16 +682,200 @@ Prioritas: Rendah
 
 Audit page besar sudah selesai, tetapi masih ada microcopy yang perlu audit lanjutan.
 
-- [ ] Pesan error dan success state.
-- [ ] Validasi form.
-- [ ] Placeholder input.
-- [ ] Empty state.
-- [ ] Modal confirm hapus data/hapus akun.
-- [ ] Copy download PDF/report skrining.
-- [ ] Email template hasil skrining dan reset password.
-- [ ] WhatsApp reminder template.
-- [ ] SEO/meta description.
-- [ ] Drawer mobile, bottom navigation, dan label navigasi kecil.
+- [x] Pesan error dan success state. Audit: Done (Tahap 3)
+- [x] Validasi form. Audit: Done (Tahap 3)
+- [x] Placeholder input. Audit: Done (Tahap 3)
+- [x] Empty state. Audit: Done (Tahap 3)
+- [x] Modal confirm hapus data/hapus akun. Audit: Done (Tahap 3)
+- [x] Copy download PDF/laporan skrining. Audit: Done (Tahap 3)
+- [x] Email template hasil skrining dan reset password. Audit: Done (Tahap 3)
+- [x] WhatsApp reminder template. Audit: Done (Tahap 3)
+- [x] SEO/meta description. Audit: Done (Tahap 3)
+- [x] Drawer mobile, bottom navigation, dan label navigasi kecil. Audit: Done (Tahap 3)
+
+## Audit Lanjutan Copywriting Tahap 3
+
+Status: Done (Audit)
+
+Fokus audit:
+
+- Microcopy tombol, pesan sukses, pesan error, empty state, modal konfirmasi, email, WhatsApp reminder, meta description, navigasi kecil, dan halaman prioritas rendah.
+- Belum menerapkan rewrite. Bagian ini adalah daftar temuan dan urutan eksekusi berikutnya.
+
+### Ringkasan Objektif
+
+Copy utama sudah lebih singkat dan tidak terlalu kaku. Sisa masalah paling terasa bukan lagi di hero atau materi besar, tetapi di teks kecil yang muncul saat user melakukan aksi: login, lupa password, kirim reminder, hapus data, cek detail skrining, dan kondisi error.
+
+Masalah utama:
+
+- Masih ada istilah campur bahasa seperti "test", "reset", "auth", dan beberapa sisa istilah internal.
+- Beberapa pesan terdengar seperti sistem, bukan produk untuk pengguna awam.
+- Ada copy yang membocorkan proses internal dokumen, misalnya menyebut DOCX/root pada halaman fase.
+- Empty state masih sebatas memberi tahu keadaan, belum selalu mengarahkan aksi berikutnya.
+- Beberapa CTA masih terlalu generik: "Memproses", "Kirim evaluasi", "Download PDF", "Batal".
+
+### Temuan Per Area
+
+#### 1. Login dan daftar
+
+Status audit: Done
+
+Yang perlu diperbaiki:
+
+- "Lanjutkan ke dashboard aplikasi." masih terasa generik. Lebih natural: "Masuk untuk membuka cek risiko, materi, dan reminder."
+- "Email opsional" lebih rapi sebagai "Email (opsional)".
+- Pesan error "Auth gagal diproses." terlalu teknis dan tidak boleh muncul ke user. Ganti menjadi "Masuk belum berhasil. Coba periksa data Anda."
+- CTA "Daftar dan masuk" masih oke, tetapi lebih manusiawi menjadi "Buat akun".
+
+Prioritas: Sedang
+
+#### 2. Lupa password, reset password, dan verifikasi email
+
+Status audit: Done
+
+Yang perlu diperbaiki:
+
+- Istilah "reset" sebaiknya distandardkan menjadi "atur ulang" pada UI yang dibaca user.
+- "Memproses..." terlalu umum. Bisa dibuat sesuai konteks: "Mengirim tautan..." atau "Menyimpan password...".
+- "Tautan reset tidak lengkap" terdengar teknis. Lebih aman: "Tautan tidak valid. Minta tautan baru."
+- "Verifikasi email" sudah jelas, tetapi deskripsinya bisa lebih singkat.
+
+Prioritas: Sedang
+
+#### 3. Halaman fase kehidupan
+
+Status audit: Done
+
+Yang perlu diperbaiki:
+
+- "Ringkasan ini mengikuti isi dokumen fase..." terasa seperti catatan internal. User tidak perlu tahu asal struktur dokumen.
+- "Catatan materi" masih aman, tetapi jangan menampilkan alasan teknis seperti DOCX/root.
+- Source note remaja menyebut "Belum ada DOCX fase remaja khusus di root"; ini wajib dihapus dari UI publik karena terasa draft/developer.
+- "Poin CERDIK yang relevan" bisa dibuat lebih hangat: "CERDIK untuk fase ini".
+
+Prioritas: Tinggi
+
+#### 4. Deteksi dini dan detail skrining
+
+Status audit: Done
+
+Yang perlu diperbaiki:
+
+- Copy laporan sudah lebih konsisten, tetapi tombol di detail masih "Download PDF". Samakan menjadi "Unduh laporan PDF".
+- Empty state riwayat sudah informatif, tetapi bisa ditambah aksi kecil: "Mulai skrining pertama".
+- Pesan reset draft "Draft skrining dikosongkan" masih terasa internal. Lebih natural: "Jawaban dikosongkan."
+- Disclaimer "bukan diagnosis" sudah konsisten. Jangan diperpanjang lagi.
+
+Prioritas: Sedang
+
+#### 5. WhatsApp reminder
+
+Status audit: Done
+
+Yang perlu diperbaiki:
+
+- "Kirim test" dan "Pesan test berhasil diproses" perlu diganti menjadi "Kirim percobaan" dan "Pesan percobaan dikirim/diproses".
+- "Fokus pesan (opsional)" cukup jelas, tetapi placeholder bisa lebih membantu: "Contoh: jalan kaki 30 menit".
+- Empty state "Belum ada reminder WhatsApp yang tersimpan" bisa dibuat lebih action-oriented: "Belum ada reminder. Buat satu pengingat dulu."
+- Template WhatsApp sudah singkat, tetapi terlalu padat empat baris. Bisa dibuat lebih ringan dengan satu fokus dan satu ajakan.
+
+Prioritas: Tinggi
+
+#### 6. Profil, data akun, dan modal konfirmasi
+
+Status audit: Done
+
+Yang perlu diperbaiki:
+
+- Modal browser `confirm` untuk hapus riwayat dan hapus akun terasa kasar. Copy-nya sudah jelas, tetapi UX/copy akan lebih baik jika nanti memakai dialog custom.
+- "Data akun berhasil disiapkan sebagai file JSON" terlalu teknis. Lebih natural: "Data akun siap diunduh."
+- "Hapus seluruh riwayat skrining..." jelas, tetapi bisa dibuat lebih tenang: "Riwayat skrining akan dihapus permanen. Lanjutkan?"
+- "Batal" sudah umum dan tidak masalah.
+
+Prioritas: Sedang
+
+#### 7. Umpan balik
+
+Status audit: Done
+
+Yang perlu diperbaiki:
+
+- "Kirim evaluasi" terasa seperti tugas kampus/admin. Lebih cocok: "Kirim masukan".
+- "Secara umum, materinya bagaimana?" sudah cukup natural.
+- "Masukan tersimpan bersama akun..." jelas, tapi bisa lebih ringan: "Masukan tersimpan di akun Anda."
+- Success state sudah bagus dan manusiawi.
+
+Prioritas: Rendah
+
+#### 8. Mitos dan Fakta
+
+Status audit: Done
+
+Yang perlu diperbaiki:
+
+- "Hasil kuis risiko sama dengan diagnosis" perlu disamakan dengan istilah produk: "Hasil skrining sama dengan diagnosis."
+- "Kuis hanya skrining edukatif" lebih natural menjadi "Skrining hanya membantu melihat risiko awal."
+- Judul dan CTA sudah cukup baik.
+
+Prioritas: Rendah
+
+#### 9. Halaman info dashboard
+
+Status audit: Done
+
+Yang perlu diperbaiki:
+
+- Media Edukasi, Tentang Aplikasi, Tim Pengembang, Sumber Referensi, dan Kebijakan Privasi dashboard masih terasa seperti halaman dokumentasi.
+- Teks "Informasi penyusun materi akan dilengkapi" membuat halaman terasa belum selesai. Jika data belum ada, lebih baik sembunyikan item atau ubah menjadi "Tim penyusun materi".
+- "Perlu review tenaga kesehatan sebelum menjadi materi final" akurat, tetapi di UI publik lebih baik: "Materi kesehatan perlu ditinjau berkala."
+- Jangan tampilkan placeholder note jika belum ada aset final.
+
+Prioritas: Sedang
+
+#### 10. Email template
+
+Status audit: Done
+
+Yang perlu diperbaiki:
+
+- Email hasil skrining sudah singkat dan jelas.
+- Subject "Hasil skrining DM: ..." cukup baik, tetapi bisa lebih ramah: "Ringkasan skrining Sahabat CERDIK DM".
+- Email reset/verifikasi memakai "Atur ulang password" dan "Verifikasi email" sudah baik.
+- Perlu konsistensi istilah: password boleh tetap "password" karena umum, tetapi "reset" di UI sebaiknya "atur ulang".
+
+Prioritas: Rendah
+
+#### 11. Error global dan auth error
+
+Status audit: Done
+
+Yang perlu diperbaiki:
+
+- ErrorBoundary: "cek kembali perubahan terakhir" terdengar seperti pesan untuk developer. Ganti menjadi "Coba muat ulang. Jika masih terjadi, coba lagi beberapa saat."
+- AuthContext fallback "Permintaan auth gagal" terlalu teknis. Ganti menjadi "Permintaan belum berhasil."
+- RequireAuth "Memeriksa sesi login..." masih aman, tetapi bisa lebih ringan: "Memeriksa sesi..."
+
+Prioritas: Tinggi
+
+#### 12. Navigasi, footer, dan meta
+
+Status audit: Done
+
+Yang perlu diperbaiki:
+
+- Header dan bottom nav sudah jelas.
+- Footer cukup rapi, tetapi "Fitur aplikasi" bisa terlalu panjang di mobile. Copy-nya aman; masalahnya lebih ke layout, bukan wording.
+- Meta description sebagian sudah baik. Halaman auth dan legal bisa dibuat sedikit lebih ringkas.
+
+Prioritas: Rendah
+
+### Urutan Apply Tahap 3
+
+1. Hapus atau rewrite teks internal yang tampil ke user: source note DOCX/root, "dokumen fase", "cek perubahan terakhir", dan "auth gagal".
+2. Standardkan istilah campur bahasa: test menjadi percobaan, reset menjadi atur ulang, download menjadi unduh.
+3. Rapikan empty state dan success state agar selalu memberi arah aksi berikutnya.
+4. Rapikan halaman dashboard info agar tidak terasa seperti draft.
+5. Rapikan email subject dan template WhatsApp agar lebih hangat tapi tetap singkat.
 
 ## Prioritas Perbaikan Copy
 
