@@ -50,7 +50,7 @@ export default function ResetPasswordPage() {
 
   return (
     <section className="content-section content-shell account-action-page">
-      <PageMeta title="Reset Password" description="Buat password baru untuk akun Sahabat CERDIK DM." />
+      <PageMeta title="Atur Ulang Password" description="Buat password baru untuk akun Sahabat CERDIK DM." />
       <header className="profile-heading">
         <h1>Buat password baru</h1>
         <p>Tautan ini hanya dapat digunakan satu kali.</p>
@@ -58,7 +58,7 @@ export default function ResetPasswordPage() {
 
       {!token ? (
         <div className="account-action-form">
-          <p className="profile-form-error">Tautan reset tidak lengkap.</p>
+          <p className="profile-form-error">Tautan tidak valid. Minta tautan baru.</p>
           <Link className="button button-primary" to="/lupa-password">Minta tautan baru</Link>
         </div>
       ) : (
@@ -91,7 +91,7 @@ export default function ResetPasswordPage() {
             <Link className="button button-primary" to="/login">Masuk dengan password baru</Link>
           ) : (
             <button className="button button-primary" disabled={isSubmitting} type="submit">
-              {isSubmitting ? "Menyimpan..." : "Simpan password baru"}
+              {isSubmitting ? "Menyimpan password..." : "Simpan password baru"}
             </button>
           )}
         </form>

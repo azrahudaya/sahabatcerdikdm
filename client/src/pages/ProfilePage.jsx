@@ -200,7 +200,7 @@ export default function ProfilePage({ phases = [] }) {
       link.download = `sahabat-cerdik-dm-data-${new Date().toISOString().slice(0, 10)}.json`;
       link.click();
       URL.revokeObjectURL(url);
-      setDataStatus("Data akun berhasil disiapkan sebagai file JSON.");
+      setDataStatus("Data akun siap diunduh.");
     } catch (error) {
       setDataStatus(error.message || "Data akun belum bisa diekspor.");
     } finally {
@@ -210,7 +210,7 @@ export default function ProfilePage({ phases = [] }) {
 
   async function handleDeleteScreenings() {
     const isConfirmed = window.confirm(
-      "Hapus seluruh riwayat skrining di akun ini? Tindakan ini tidak bisa dibatalkan."
+      "Riwayat skrining akan dihapus permanen. Lanjutkan?"
     );
 
     if (!isConfirmed) {

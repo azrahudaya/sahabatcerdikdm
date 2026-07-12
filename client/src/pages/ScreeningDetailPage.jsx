@@ -214,7 +214,7 @@ export default function ScreeningDetailPage() {
               Atur reminder
             </Link>
             <button className="button button-secondary" type="button" onClick={downloadReport}>
-              Download PDF
+              Unduh laporan PDF
             </button>
             <button className="button button-secondary button-danger-soft" type="button" onClick={deleteScreening}>
               Hapus hasil

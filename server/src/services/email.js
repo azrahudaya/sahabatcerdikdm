@@ -104,7 +104,7 @@ function buildScreeningEmail({ screening, user }) {
   `;
 
   return {
-    subject: `Hasil skrining DM: ${screening.resultTitle}`,
+    subject: `Ringkasan skrining Sahabat CERDIK DM`,
     text,
     html
   };

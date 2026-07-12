@@ -48,7 +48,7 @@ export default function ForgotPasswordPage() {
       <Link className="account-back-link" to="/login">Kembali ke halaman masuk</Link>
       <header className="profile-heading">
         <h1>Lupa password</h1>
-        <p>Masukkan email akun. Jika terdaftar, kami akan mengirim tautan reset.</p>
+        <p>Masukkan email akun. Jika terdaftar, kami akan mengirim tautan atur ulang.</p>
       </header>
 
       <form className="account-action-form" onSubmit={handleSubmit}>
@@ -66,10 +66,10 @@ export default function ForgotPasswordPage() {
         {status ? <p className="profile-form-success" role="status">{status}</p> : null}
         {error ? <p className="profile-form-error" role="alert">{error}</p> : null}
         {isDevelopment && isLocalhost && devActionUrl ? (
-          <a className="local-action-link" href={devActionUrl}>Buka tautan reset lokal</a>
+          <a className="local-action-link" href={devActionUrl}>Buka tautan atur ulang lokal</a>
         ) : null}
         <button className="button button-primary" disabled={isSubmitting} type="submit">
-          {isSubmitting ? "Memproses..." : "Kirim tautan reset"}
+          {isSubmitting ? "Mengirim tautan..." : "Kirim tautan atur ulang"}
         </button>
       </form>
     </section>

@@ -696,6 +696,7 @@ Audit page besar sudah selesai, tetapi masih ada microcopy yang perlu audit lanj
 ## Audit Lanjutan Copywriting Tahap 3
 
 Status: Done (Audit)
+Applied: Done (Tahap 3)
 
 Fokus audit:
 
@@ -871,11 +872,11 @@ Prioritas: Rendah
 
 ### Urutan Apply Tahap 3
 
-1. Hapus atau rewrite teks internal yang tampil ke user: source note DOCX/root, "dokumen fase", "cek perubahan terakhir", dan "auth gagal".
-2. Standardkan istilah campur bahasa: test menjadi percobaan, reset menjadi atur ulang, download menjadi unduh.
-3. Rapikan empty state dan success state agar selalu memberi arah aksi berikutnya.
-4. Rapikan halaman dashboard info agar tidak terasa seperti draft.
-5. Rapikan email subject dan template WhatsApp agar lebih hangat tapi tetap singkat.
+1. Hapus atau rewrite teks internal yang tampil ke user: source note DOCX/root, "dokumen fase", "cek perubahan terakhir", dan "auth gagal". Applied: Done (Tahap 3)
+2. Standardkan istilah campur bahasa: test menjadi percobaan, reset menjadi atur ulang, download menjadi unduh. Applied: Done (Tahap 3)
+3. Rapikan empty state dan success state agar selalu memberi arah aksi berikutnya. Applied: Done (Tahap 3)
+4. Rapikan halaman dashboard info agar tidak terasa seperti draft. Applied: Done (Tahap 3)
+5. Rapikan email subject dan template WhatsApp agar lebih hangat tapi tetap singkat. Applied: Done (Tahap 3)
 
 ## Prioritas Perbaikan Copy
 

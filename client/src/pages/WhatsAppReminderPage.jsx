@@ -226,14 +226,14 @@ export default function WhatsAppReminderPage({ page }) {
       });
 
       if (!response.ok) {
-        throw new Error("Pesan test belum bisa dikirim.");
+        throw new Error("Pesan percobaan belum bisa dikirim.");
       }
 
       const data = await response.json();
       setNotice(
         data.result?.status === "mock_sent"
-          ? "Pesan test berhasil diproses."
-          : "Pesan test berhasil diproses."
+          ? "Pesan percobaan diproses."
+          : "Pesan percobaan diproses."
       );
       await loadReminderData();
     } catch (testError) {
@@ -300,7 +300,7 @@ export default function WhatsAppReminderPage({ page }) {
             Fokus pesan (opsional)
             <textarea
               rows="4"
-              placeholder="Kosongkan untuk memakai pesan otomatis."
+              placeholder="Contoh: jalan kaki 30 menit"
               value={form.focus}
               onChange={(event) => updateField("focus", event.target.value)}
             />
@@ -332,7 +332,7 @@ export default function WhatsAppReminderPage({ page }) {
               type="button"
               onClick={sendTestMessage}
             >
-              {isTesting ? "Mengirim..." : "Kirim test"}
+              {isTesting ? "Mengirim..." : "Kirim percobaan"}
             </button>
           </div>
 
@@ -394,7 +394,7 @@ export default function WhatsAppReminderPage({ page }) {
             ))}
           </div>
         ) : (
-          <p className="empty-history">Belum ada reminder WhatsApp yang tersimpan.</p>
+          <p className="empty-history">Belum ada reminder. Buat satu pengingat dulu.</p>
         )}
       </div>
     </section>

@@ -89,7 +89,7 @@ export default function LoginPage() {
         moveIdentifierToRegister(form.identifier);
         setError("Akun belum terdaftar. Lengkapi data untuk membuat akun.");
       } else {
-        setError(submitError.message || "Auth gagal diproses.");
+        setError(submitError.message || "Masuk belum berhasil. Coba periksa data Anda.");
       }
     } finally {
       setIsSubmitting(false);
@@ -102,12 +102,12 @@ export default function LoginPage() {
     <section className="content-section content-shell">
       <PageMeta
         title="Masuk"
-        description="Masuk ke dashboard Sahabat CERDIK DM untuk membuka menu aplikasi."
+        description="Masuk untuk membuka cek risiko, materi, dan reminder."
       />
       <div className="auth-shell">
         <div className="auth-copy">
           <h1>{isRegisterMode ? "Daftar akun Sahabat CERDIK DM" : "Masuk ke Sahabat CERDIK DM"}</h1>
-          <p>{isRegisterMode ? "Buat akun dengan nomor WhatsApp." : "Lanjutkan ke dashboard aplikasi."}</p>
+          <p>{isRegisterMode ? "Buat akun dengan nomor WhatsApp." : "Masuk untuk membuka cek risiko, materi, dan reminder."}</p>
           {moduleLabel ? <p className="auth-hint">Menu yang dipilih: {moduleLabel}</p> : null}
         </div>
 
@@ -164,7 +164,7 @@ export default function LoginPage() {
               </label>
 
               <label className="auth-field">
-                <span>Email opsional</span>
+                <span>Email (opsional)</span>
                 <input
                   autoComplete="email"
                   name="email"
@@ -212,7 +212,7 @@ export default function LoginPage() {
           ) : null}
 
           <button className="button button-primary auth-submit" disabled={isSubmitting} type="submit">
-            {isSubmitting ? "Memproses..." : isRegisterMode ? "Daftar dan masuk" : "Masuk"}
+            {isSubmitting ? "Memproses..." : isRegisterMode ? "Buat akun" : "Masuk"}
           </button>
 
         </form>

@@ -60,7 +60,7 @@ export default function PhasePage({ phases }) {
         </article>
 
         <article className="article-panel">
-          <h2>Poin CERDIK yang relevan</h2>
+          <h2>CERDIK untuk fase ini</h2>
           <div className="tip-list">
             {phase.cerdikTips.map((tip) => (
               <div className="tip-item" key={tip.title}>
@@ -76,7 +76,7 @@ export default function PhasePage({ phases }) {
         <section className="phase-module-section">
           <div className="section-heading">
             <h2>Yang perlu diperhatikan.</h2>
-            <p>Ringkasan ini mengikuti isi dokumen fase, dibuat pendek agar mudah dibaca di ponsel.</p>
+            <p>Pilih poin yang paling dekat dengan kondisi Anda sekarang.</p>
           </div>
           <div className="phase-module-list">
             {phase.modules.map((module) => (

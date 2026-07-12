@@ -339,7 +339,7 @@ export const siteContent = {
             label: "Evaluasi Edukasi",
             icon: "EV",
             tone: "butter",
-            description: "Pre-test, post-test, dan kuis Sahabat CERDIK DM.",
+            description: "Cek pemahaman sebelum dan sesudah membaca materi.",
             to: "/dashboard/evaluasi"
           },
           {
@@ -504,7 +504,7 @@ export const siteContent = {
       points: [
         {
           title: "Penyusun materi",
-          body: "Informasi penyusun materi akan dilengkapi."
+          body: "Tim penyusun materi bertanggung jawab merapikan isi edukasi agar tetap jelas dan mudah dipakai."
         },
         {
           title: "Validator kesehatan",
@@ -512,7 +512,7 @@ export const siteContent = {
         },
         {
           title: "Pengembang aplikasi",
-          body: "Informasi pengembang website akan dilengkapi."
+          body: "Pengembang aplikasi menyiapkan alur web, dashboard, skrining, reminder, dan pengelolaan akun."
         }
       ]
     },
@@ -534,7 +534,7 @@ export const siteContent = {
         },
         {
           title: "Perlu ditinjau",
-          body: "Ambang, anjuran fase khusus, herbal, dan relaksasi perlu review tenaga kesehatan sebelum menjadi materi final."
+          body: "Materi kesehatan perlu ditinjau berkala agar tetap aman dan sesuai rujukan."
         }
       ],
       links: [
@@ -545,7 +545,7 @@ export const siteContent = {
         },
         {
           label: "ADA Type 2 Diabetes Risk Test",
-          description: "Contoh penekanan bahwa risk test bukan diagnosis dan hasil perlu dikonfirmasi di fasilitas kesehatan.",
+          description: "Contoh penekanan bahwa skrining risiko bukan diagnosis dan hasil perlu dikonfirmasi di fasilitas kesehatan.",
           href: "https://diabetes.org/diabetes-risk-test"
         },
         {
@@ -609,8 +609,8 @@ export const siteContent = {
         fact: "Materi fase nifas dan menyusui menekankan bahwa menyusui dapat membantu pemulihan metabolik dan mendukung berat badan ibu."
       },
       {
-        myth: "Hasil kuis risiko sama dengan diagnosis.",
-        fact: "Kuis hanya skrining edukatif. Diagnosis tetap perlu pemeriksaan tenaga kesehatan."
+        myth: "Hasil skrining sama dengan diagnosis.",
+        fact: "Skrining hanya membantu melihat risiko awal. Diagnosis tetap perlu pemeriksaan tenaga kesehatan."
       }
     ]
   },
@@ -1133,7 +1133,7 @@ export const siteContent = {
         },
         {
           question: "Apakah hasil skrining risiko bisa menggantikan pemeriksaan dokter?",
-          answer: "Tidak. Kuis hanya skrining awal. Diagnosis tetap perlu pemeriksaan tenaga kesehatan."
+          answer: "Tidak. Skrining hanya membantu melihat risiko awal. Diagnosis tetap perlu pemeriksaan tenaga kesehatan."
         }
       ]
     }
@@ -1168,7 +1168,7 @@ export const siteContent = {
         "Fokus utama tetap pada pencegahan obesitas dan gaya hidup aktif."
       ],
       sourceNote:
-        "Belum ada DOCX fase remaja khusus di root. Materi ini disusun dari tabel menu aplikasi dan dokumen beranda, sehingga perlu dilengkapi lagi bila dokumen remaja tersedia.",
+        "Materi remaja dibuat sebagai pengantar kebiasaan sehat. Untuk kondisi khusus, tetap minta arahan orang tua atau tenaga kesehatan.",
       visual: {
         title: "Ilustrasi remaja aktif",
         size: "1200 x 720 px",

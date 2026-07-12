@@ -284,9 +284,9 @@ function getReminderClock() {
 function buildReminderMessage(reminder) {
   return [
     `Halo ${reminder.name || "Sahabat"}, ini reminder CERDIK DM.`,
-    `Fokus hari ini: ${reminder.focus || "jaga kebiasaan sehat"}.`,
-    "Luangkan waktu sebentar untuk cek tubuh, makan seimbang, bergerak, dan istirahat cukup.",
-    "Pesan ini bersifat edukatif dan bukan pengganti saran tenaga kesehatan."
+    `Fokus hari ini: ${reminder.focus || "jaga satu kebiasaan sehat"}.`,
+    "Mulai dari langkah kecil yang realistis.",
+    "Pesan ini edukasi, bukan pengganti saran tenaga kesehatan."
   ].join("\n");
 }
 
@@ -783,7 +783,7 @@ app.post("/api/auth/password/forgot", authRateLimit, async (req, res, next) => {
     const email = String(req.body.email || "").trim().toLowerCase();
     const genericResponse = {
       status: "ok",
-      message: "Jika email terdaftar, tautan reset akan dikirim."
+      message: "Jika email terdaftar, tautan atur ulang akan dikirim."
     };
 
     if (!email || !email.includes("@")) {
@@ -835,7 +835,7 @@ app.post("/api/auth/password/reset", authRateLimit, async (req, res, next) => {
     if (!tokenResult.rows[0]) {
       res.status(400).json({
         status: "invalid_token",
-        message: "Tautan reset tidak valid atau sudah kedaluwarsa."
+        message: "Tautan tidak valid atau sudah kedaluwarsa."
       });
       return;
     }
@@ -1484,7 +1484,7 @@ app.post("/api/reminders/whatsapp/test", requireAuth, async (req, res, next) => 
 
     res.json({
       status: "ok",
-      message: "Pesan test diproses.",
+      message: "Pesan percobaan diproses.",
       result
     });
   } catch (error) {

@@ -10,7 +10,7 @@ export default function RequireAuth({ children }) {
     return (
       <section className="content-section content-shell">
         <div className="auth-card">
-          <p className="auth-note">Memeriksa sesi login...</p>
+          <p className="auth-note">Memeriksa sesi...</p>
         </div>
       </section>
     );

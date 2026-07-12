@@ -79,7 +79,7 @@ export default function FeedbackPage({ page }) {
           <p>{page.intro}</p>
           <div className="feedback-note">
             <strong>Catatan</strong>
-            <p>Masukan tersimpan bersama akun yang sedang digunakan.</p>
+            <p>Masukan tersimpan di akun Anda.</p>
           </div>
         </div>
 
@@ -129,7 +129,7 @@ export default function FeedbackPage({ page }) {
           </label>
 
           <button className="button button-primary feedback-submit" disabled={isSubmitting} type="submit">
-            {isSubmitting ? "Mengirim..." : "Kirim evaluasi"}
+            {isSubmitting ? "Mengirim..." : "Kirim masukan"}
           </button>
           {submitError ? <p className="feedback-error">{submitError}</p> : null}
         </form>

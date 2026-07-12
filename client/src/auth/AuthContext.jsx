@@ -33,7 +33,7 @@ async function authRequest(path, { body, method, token } = {}) {
   const payload = await response.json().catch(() => ({}));
 
   if (!response.ok) {
-    const error = new Error(payload.message || "Permintaan auth gagal.");
+    const error = new Error(payload.message || "Permintaan belum berhasil.");
     error.status = payload.status || "error";
     error.responseStatus = response.status;
     throw error;

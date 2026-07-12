@@ -18,7 +18,7 @@ export default class ErrorBoundary extends Component {
           <section className="content-section content-shell">
             <div className="article-hero card">
               <h1>Terjadi kendala.</h1>
-              <p>Silakan muat ulang halaman. Jika masih terjadi, cek kembali perubahan terakhir.</p>
+              <p>Coba muat ulang halaman. Jika masih terjadi, coba lagi beberapa saat.</p>
             </div>
           </section>
         </main>

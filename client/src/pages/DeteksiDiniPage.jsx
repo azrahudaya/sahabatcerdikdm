@@ -322,7 +322,7 @@ export default function DeteksiDiniPage({ page }) {
     setBaselineTouched({});
     setSavedScreeningId("");
     setActiveStep(0);
-    setSavedMessage("Draft skrining dikosongkan.");
+    setSavedMessage("Jawaban dikosongkan.");
   }
 
   function renderGateStep() {
