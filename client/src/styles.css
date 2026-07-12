@@ -896,10 +896,11 @@ img {
 
 .phase-list-item {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  align-items: stretch;
-  padding: 18px;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.34fr);
+  gap: 24px;
+  align-items: center;
+  min-height: 178px;
+  padding: 18px 20px;
   border-left: 5px solid var(--tone-bg, var(--blue));
 }
 
@@ -961,6 +962,84 @@ img {
 
 .phase-list-copy .inline-link {
   margin-top: 14px;
+}
+
+.phase-list-visual {
+  position: relative;
+  overflow: hidden;
+  min-height: 130px;
+  border: 1px solid rgba(35, 49, 74, 0.08);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.54)),
+    color-mix(in srgb, var(--tone-bg, var(--blue)) 14%, #eef1f5);
+}
+
+.phase-list-visual::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0)),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(35, 49, 74, 0.08) 0 1px,
+      transparent 1px 10px
+    );
+}
+
+.phase-visual-orb,
+.phase-visual-card,
+.phase-visual-line {
+  position: absolute;
+  display: block;
+}
+
+.phase-visual-orb-main {
+  right: 24px;
+  bottom: 18px;
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: var(--tone-bg, var(--blue));
+}
+
+.phase-visual-orb-soft {
+  top: 18px;
+  right: 78px;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: inset 0 0 0 1px rgba(35, 49, 74, 0.08);
+}
+
+.phase-visual-card {
+  left: 20px;
+  bottom: 20px;
+  width: 76px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: inset 0 0 0 1px rgba(35, 49, 74, 0.08);
+}
+
+.phase-visual-line {
+  left: 20px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(35, 49, 74, 0.16);
+}
+
+.phase-visual-line-long {
+  top: 28px;
+  width: 112px;
+}
+
+.phase-visual-line-short {
+  top: 44px;
+  width: 72px;
 }
 
 .cerdik-strip {
@@ -4352,6 +4431,10 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .phase-list-visual {
+    min-height: 118px;
+  }
+
   .cerdik-chip-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -4614,6 +4697,16 @@ img {
 
   .phase-list-copy {
     padding: 0;
+  }
+
+  .phase-list-visual {
+    min-height: 96px;
+  }
+
+  .phase-visual-orb-main {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
   }
 
   .mock-grid {

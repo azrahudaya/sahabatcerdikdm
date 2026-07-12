@@ -109,6 +109,13 @@ export default function HomePage({ content, phases, cerdik, entryModules }) {
                   Lihat halaman fase
                 </Link>
               </div>
+              <div className="phase-list-visual" aria-hidden="true">
+                <span className="phase-visual-orb phase-visual-orb-main" />
+                <span className="phase-visual-orb phase-visual-orb-soft" />
+                <span className="phase-visual-card" />
+                <span className="phase-visual-line phase-visual-line-long" />
+                <span className="phase-visual-line phase-visual-line-short" />
+              </div>
             </article>
           ))}
         </div>
