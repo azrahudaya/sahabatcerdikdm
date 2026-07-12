@@ -6,8 +6,32 @@ import CookieConsent from "./CookieConsent.jsx";
 
 const primaryHeaderLinks = [
   { label: "Beranda", to: "/" },
-  { label: "Deteksi Dini", to: "/deteksi-dini" },
-  { label: "Fase", to: "/#fase-kehidupan" }
+  { label: "Tentang", to: "/tentang" },
+  { label: "Materi DM", to: "/tentang-dm" },
+  { label: "FAQ", to: "/faq" },
+  { label: "Kontak", to: "/kontak" }
+];
+
+const footerProductLinks = [
+  { label: "Beranda", to: "/" },
+  { label: "Tentang", to: "/tentang" },
+  { label: "FAQ", to: "/faq" },
+  { label: "Kontak", to: "/kontak" }
+];
+
+const footerMaterialLinks = [
+  { label: "Tentang DM", to: "/tentang-dm" },
+  { label: "Pencegahan", to: "/pencegahan-dm" },
+  { label: "Gizi Seimbang", to: "/gizi-seimbang" },
+  { label: "Fase Kehidupan", to: "/#fase-kehidupan" },
+  { label: "Deteksi Dini", to: "/deteksi-dini" }
+];
+
+const footerAppLinks = [
+  { label: "Dashboard", to: "/dashboard" },
+  { label: "Reminder WhatsApp", to: "/dashboard/reminder-harian" },
+  { label: "Umpan Balik", to: "/dashboard/umpan-balik" },
+  { label: "Profil Akun", to: "/dashboard/profil" }
 ];
 
 const brandLogoSrc = "/logosahabatcerdikdm-dark.png";
@@ -129,6 +153,9 @@ export default function SiteLayout({ navigation, brand, phases }) {
           </nav>
 
           <div className="header-actions">
+            <NavLink className="header-cta header-cta-secondary" to="/deteksi-dini">
+              Cek risiko
+            </NavLink>
             <NavLink className="header-cta" to={isAuthenticated ? "/dashboard" : "/login"}>
               {isAuthenticated ? "Dashboard" : "Masuk"}
             </NavLink>
@@ -255,13 +282,17 @@ export default function SiteLayout({ navigation, brand, phases }) {
               <img className="footer-brand-logo" src={brandLogoSrc} alt={brand.name} />
             </div>
             <p>Temani langkah sehat di setiap fase kehidupan perempuan.</p>
+            <div className="footer-legal-links">
+              <NavLink to="/syarat-ketentuan">Syarat & Ketentuan</NavLink>
+              <NavLink to="/privasi-data">Privasi Data</NavLink>
+            </div>
             <p className="footer-copyright">© {currentYear} Sahabat CERDIK DM.</p>
           </div>
 
           <div className="footer-column">
-            <h3>Menu utama</h3>
+            <h3>Produk</h3>
             <ul>
-              {navigation.map((item) => (
+              {footerProductLinks.map((item) => (
                 <li key={item.to}>
                   <NavLink to={item.to}>{item.label}</NavLink>
                 </li>
@@ -270,11 +301,11 @@ export default function SiteLayout({ navigation, brand, phases }) {
           </div>
 
           <div className="footer-column">
-            <h3>Fase kehidupan</h3>
+            <h3>Materi</h3>
             <ul>
-              {phases.map((phase) => (
-                <li key={phase.slug}>
-                  <NavLink to={`/fase/${phase.slug}`}>{phase.label}</NavLink>
+              {footerMaterialLinks.map((item) => (
+                <li key={item.to}>
+                  <NavLink to={item.to}>{item.label}</NavLink>
                 </li>
               ))}
             </ul>
@@ -283,24 +314,11 @@ export default function SiteLayout({ navigation, brand, phases }) {
           <div className="footer-column">
             <h3>Fitur aplikasi</h3>
             <ul>
-              <li>
-                <NavLink to="/dashboard/media-edukasi">Media Edukasi</NavLink>
-              </li>
-              <li>
-                <NavLink to="/dashboard/reminder-harian">Reminder WhatsApp</NavLink>
-              </li>
-              <li>
-                <NavLink to="/dashboard/umpan-balik">Umpan Balik</NavLink>
-              </li>
-              <li>
-                <NavLink to="/dashboard/profil">Profil Akun</NavLink>
-              </li>
-              <li>
-                <NavLink to="/syarat-ketentuan">Syarat & Ketentuan</NavLink>
-              </li>
-              <li>
-                <NavLink to="/privasi-data">Privasi Data</NavLink>
-              </li>
+              {footerAppLinks.map((item) => (
+                <li key={item.to}>
+                  <NavLink to={item.to}>{item.label}</NavLink>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

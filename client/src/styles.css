@@ -186,6 +186,11 @@ img {
   box-shadow: none;
 }
 
+.header-cta-secondary {
+  color: var(--blue-deep);
+  background: #eef3ff;
+}
+
 .header-cta:hover,
 .button:hover {
   transform: translateY(-1px);
@@ -4360,6 +4365,23 @@ img {
   max-width: 30ch;
   margin: 10px 0 0;
   color: rgba(255, 255, 255, 0.66);
+}
+
+.footer-legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin-top: 18px;
+}
+
+.footer-legal-links a {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.footer-legal-links a:hover {
+  color: #ffffff;
 }
 
 .footer-brand-block .footer-copyright {
