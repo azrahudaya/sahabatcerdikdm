@@ -562,7 +562,7 @@ export const siteContent = {
     },
     kebijakanPrivasi: {
       title: "Kebijakan Privasi",
-      intro: "Ringkasan privasi MVP. Halaman ini menjelaskan data yang dipakai dan kontrol awal yang sudah tersedia di akun.",
+      intro: "Ringkasan privasi akun. Halaman ini menjelaskan data yang dipakai dan kontrol awal yang tersedia di aplikasi.",
       points: [
         {
           title: "Data yang digunakan",
@@ -577,8 +577,8 @@ export const siteContent = {
           body: "Pengguna dapat mengubah profil, mengekspor data akun, menghapus satu hasil skrining, menghapus seluruh riwayat skrining, atau menghapus akun beserta data terkait dari halaman profil."
         },
         {
-          title: "Tahap produksi",
-          body: "Sebelum rilis publik, aplikasi tetap perlu kebijakan final, persetujuan eksplisit, retensi data, dan penjelasan provider email/WhatsApp."
+          title: "Halaman lengkap",
+          body: "Versi publik yang lebih lengkap tersedia di halaman Privasi Data pada footer aplikasi."
         }
       ]
     }
@@ -947,6 +947,132 @@ export const siteContent = {
             "Buah potong, kacang secukupnya, yogurt tawar, ubi rebus, atau camilan rumahan bisa menjadi opsi.",
             "Pilih camilan yang punya serat atau protein, bukan hanya rasa manis.",
             "Untuk ibu hamil, menyusui, lansia, atau pengguna dengan penyakit tertentu, sesuaikan dengan arahan tenaga kesehatan."
+          ]
+        }
+      ]
+    },
+    syaratKetentuan: {
+      title: "Syarat dan Ketentuan",
+      intro:
+        "Ketentuan umum penggunaan Sahabat CERDIK DM sebagai aplikasi informasi, skrining awal, dan pengingat kebiasaan sehat.",
+      callout:
+        "Aplikasi ini bersifat edukatif. Informasi, hasil skrining, dan reminder tidak menggantikan diagnosis, konsultasi, atau keputusan tenaga kesehatan.",
+      nextActions: [
+        { label: "Baca Privasi Data", to: "/privasi-data" },
+        { label: "Kembali ke Beranda", to: "/" }
+      ],
+      sections: [
+        {
+          title: "Penggunaan aplikasi",
+          body:
+            "Dengan menggunakan aplikasi, pengguna setuju memakai Sahabat CERDIK DM secara wajar untuk membaca materi, mengisi skrining awal, menyimpan hasil, dan mengatur reminder.",
+          bullets: [
+            "Pengguna bertanggung jawab memastikan data yang diisi benar dan milik sendiri.",
+            "Akun tidak boleh dipakai untuk mengakses, mengubah, atau menghapus data milik orang lain.",
+            "Pengguna di bawah usia dewasa sebaiknya memakai aplikasi dengan pendampingan orang tua, wali, atau pendamping yang bertanggung jawab."
+          ]
+        },
+        {
+          title: "Batasan informasi kesehatan",
+          body:
+            "Konten DM, gizi, fase kehidupan, FINDRISC, dan CERDIK disediakan untuk membantu pemahaman awal dan kebiasaan pencegahan.",
+          bullets: [
+            "Hasil FINDRISC adalah skrining non-lab, bukan diagnosis Diabetes Melitus.",
+            "Jika ada keluhan menetap, kehamilan, riwayat DM, atau kondisi khusus, pengguna perlu menghubungi tenaga kesehatan.",
+            "Keputusan pemeriksaan, diagnosis, obat, terapi, dan tindakan medis tetap berada pada tenaga kesehatan."
+          ]
+        },
+        {
+          title: "Akun, keamanan, dan reminder",
+          body:
+            "Beberapa fitur membutuhkan akun agar hasil skrining, profil fase, dan reminder bisa tersimpan terpisah untuk setiap pengguna.",
+          bullets: [
+            "Pengguna wajib menjaga kerahasiaan akses akun dan tidak membagikan kode atau kredensial kepada pihak lain.",
+            "Reminder WhatsApp hanya dikirim berdasarkan pengaturan yang dibuat pengguna dan dapat diubah atau dimatikan.",
+            "Layanan dapat terganggu sementara karena pemeliharaan, perubahan teknis, atau gangguan pihak ketiga seperti email, WhatsApp, hosting, dan jaringan."
+          ]
+        },
+        {
+          title: "Konten dan larangan penggunaan",
+          body:
+            "Pengguna dapat membaca materi, mengisi evaluasi, dan memberi umpan balik untuk membantu pengembangan aplikasi.",
+          bullets: [
+            "Dilarang mengirim konten yang melanggar hukum, menyesatkan, mengandung data pribadi orang lain tanpa izin, atau mengganggu layanan.",
+            "Dilarang mencoba merusak sistem, melakukan scraping berlebihan, atau menyalahgunakan fitur autentikasi.",
+            "Materi aplikasi dapat diperbarui mengikuti validasi, kebutuhan produk, dan rujukan kesehatan yang lebih baru."
+          ]
+        },
+        {
+          title: "Dasar umum dan perubahan",
+          body:
+            "Ketentuan ini disusun secara umum dengan memperhatikan praktik layanan elektronik di Indonesia, termasuk prinsip kehati-hatian dalam UU ITE sebagaimana telah diubah terakhir dengan UU No. 1 Tahun 2024.",
+          bullets: [
+            "Versi ini bukan nasihat hukum final dan dapat disesuaikan sebelum rilis publik skala besar.",
+            "Perubahan penting sebaiknya diberitahukan melalui aplikasi atau kanal resmi pengelola.",
+            "Jika ada bagian yang tidak berlaku, bagian lain tetap dapat digunakan sejauh diizinkan hukum yang berlaku di Indonesia."
+          ]
+        }
+      ]
+    },
+    privasiData: {
+      title: "Privasi Data",
+      intro:
+        "Ringkasan cara Sahabat CERDIK DM mengumpulkan, memakai, menyimpan, dan memberi kontrol atas data pengguna.",
+      callout:
+        "Privasi ini disusun mengikuti prinsip umum UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi: terbatas, jelas tujuannya, aman, dan dapat dikontrol oleh pengguna.",
+      nextActions: [
+        { label: "Baca Syarat & Ketentuan", to: "/syarat-ketentuan" },
+        { label: "Masuk ke Profil", to: "/dashboard/profil" }
+      ],
+      sections: [
+        {
+          title: "Data yang dikumpulkan",
+          body:
+            "Data yang dipakai bergantung pada fitur yang digunakan. Tidak semua pengguna akan mengisi semua data.",
+          bullets: [
+            "Data akun: nama, email atau nomor WhatsApp, kata sandi yang disimpan dalam bentuk hash, dan status verifikasi.",
+            "Data profil dan skrining: fase kehidupan, usia, tinggi, berat, lingkar perut, jawaban FINDRISC, skor, kategori risiko, dan catatan tindak lanjut.",
+            "Data fitur: pengaturan reminder, riwayat reminder, evaluasi edukasi, umpan balik, serta data teknis dasar seperti waktu akses dan log keamanan."
+          ]
+        },
+        {
+          title: "Tujuan penggunaan data",
+          body:
+            "Data digunakan untuk menjalankan fitur inti aplikasi dan menjaga pengalaman pengguna tetap personal namun sederhana.",
+          bullets: [
+            "Membuat akun, login, memulihkan akses, dan memisahkan data antar pengguna.",
+            "Menyimpan hasil skrining, menampilkan riwayat, membuat laporan PDF, dan mengirim ringkasan bila fitur email aktif.",
+            "Mengirim reminder WhatsApp sesuai jadwal yang dipilih serta memperbaiki materi, alur, dan kualitas aplikasi."
+          ]
+        },
+        {
+          title: "Penyimpanan dan pembagian data",
+          body:
+            "Data disimpan pada database aplikasi dan hanya dibagikan sejauh diperlukan untuk menjalankan layanan.",
+          bullets: [
+            "Data dapat diproses oleh penyedia infrastruktur seperti server, database, email, atau WhatsApp reminder.",
+            "Data tidak dijual sebagai data pribadi pengguna.",
+            "Data dapat dibuka bila diwajibkan oleh hukum, perintah otoritas yang sah, atau untuk melindungi keamanan layanan."
+          ]
+        },
+        {
+          title: "Hak dan kontrol pengguna",
+          body:
+            "Pengguna tetap memiliki kontrol atas data akun sejauh fitur sudah tersedia di aplikasi.",
+          bullets: [
+            "Pengguna dapat memperbarui profil, mengekspor data akun, menghapus hasil skrining, menghapus riwayat skrining, atau menghapus akun.",
+            "Pengguna dapat menonaktifkan reminder WhatsApp kapan saja dari halaman reminder.",
+            "Permintaan akses, koreksi, penarikan persetujuan, atau penghapusan data dapat dilakukan melalui fitur profil dan kanal resmi pengelola aplikasi."
+          ]
+        },
+        {
+          title: "Keamanan, retensi, dan batasan",
+          body:
+            "Aplikasi menerapkan langkah keamanan dasar seperti autentikasi, pemisahan data per akun, dan pembatasan akses endpoint.",
+          bullets: [
+            "Data disimpan selama akun aktif atau selama diperlukan untuk tujuan fitur, kecuali pengguna menghapusnya atau hukum mewajibkan penyimpanan lebih lama.",
+            "Tidak ada sistem yang sepenuhnya bebas risiko, sehingga pengguna tetap perlu menjaga akses akun dan perangkatnya.",
+            "Kebijakan ini dapat diperbarui bila fitur, provider, atau kewajiban hukum berubah."
           ]
         }
       ]

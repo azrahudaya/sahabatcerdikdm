@@ -73,6 +73,8 @@ export default function App() {
               element={<TopicPage page={siteContent.pages.pencegahanDm} />}
             />
             <Route path="/gizi-seimbang" element={<TopicPage page={siteContent.pages.giziSeimbang} />} />
+            <Route path="/syarat-ketentuan" element={<TopicPage page={siteContent.pages.syaratKetentuan} />} />
+            <Route path="/privasi-data" element={<TopicPage page={siteContent.pages.privasiData} />} />
             <Route
               path="/deteksi-dini"
               element={

@@ -4325,6 +4325,12 @@ img {
   color: rgba(255, 255, 255, 0.66);
 }
 
+.footer-brand-block .footer-copyright {
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 0.88rem;
+}
+
 .footer-column {
   padding-top: 4px;
 }

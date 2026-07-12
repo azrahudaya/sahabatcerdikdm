@@ -39,6 +39,7 @@ export default function SiteLayout({ navigation, brand, phases }) {
   const { isAuthenticated, logout } = useAuth();
   const drawerRef = useRef(null);
   const closeButtonRef = useRef(null);
+  const currentYear = new Date().getFullYear();
 
   useEffect(() => {
     setIsMenuOpen(false);
@@ -251,6 +252,7 @@ export default function SiteLayout({ navigation, brand, phases }) {
               <img className="footer-brand-logo" src={brandLogoSrc} alt={brand.name} />
             </div>
             <p>Temani langkah sehat di setiap fase kehidupan perempuan.</p>
+            <p className="footer-copyright">© {currentYear} Sahabat CERDIK DM.</p>
           </div>
 
           <div className="footer-column">
@@ -292,6 +294,12 @@ export default function SiteLayout({ navigation, brand, phases }) {
               </li>
               <li>
                 <NavLink to="/dashboard/profil">Profil Akun</NavLink>
+              </li>
+              <li>
+                <NavLink to="/syarat-ketentuan">Syarat & Ketentuan</NavLink>
+              </li>
+              <li>
+                <NavLink to="/privasi-data">Privasi Data</NavLink>
               </li>
             </ul>
           </div>
