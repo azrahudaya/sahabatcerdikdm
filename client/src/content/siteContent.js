@@ -90,32 +90,32 @@ export const siteContent = {
     {
       letter: "C",
       title: "Cek kesehatan",
-      description: "Mulai dari pengecekan dasar yang rutin."
+      description: "Ukur IMT, lingkar perut, dan cek gula darah bila tersedia."
     },
     {
       letter: "E",
       title: "Enyahkan asap rokok",
-      description: "Jaga diri dari rokok aktif maupun pasif."
+      description: "Jauhi rokok aktif dan paparan asap di rumah atau kerja."
     },
     {
       letter: "R",
       title: "Rajin aktivitas fisik",
-      description: "Biasakan tubuh aktif setiap hari."
+      description: "Gerak 30 menit, bisa dicicil jadi beberapa sesi pendek."
     },
     {
       letter: "D",
       title: "Diet seimbang",
-      description: "Pilih makan yang lebih teratur dan seimbang."
+      description: "Pakai prinsip 3J: jumlah, jenis, dan jadwal makan."
     },
     {
       letter: "I",
       title: "Istirahat cukup",
-      description: "Tidur cukup membantu tubuh tetap stabil."
+      description: "Jaga jam tidur lebih teratur dan kurangi begadang."
     },
     {
       letter: "K",
       title: "Kelola stres",
-      description: "Tenangkan pikiran dengan cara yang sederhana."
+      description: "Ambil jeda, tarik napas, atau bicara dengan orang tepercaya."
     }
   ],
   tools: [

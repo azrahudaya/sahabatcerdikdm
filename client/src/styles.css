@@ -1086,8 +1086,8 @@ img {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px;
-  align-items: center;
-  min-height: 64px;
+  align-items: start;
+  min-height: 104px;
   padding: 12px;
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.08);
@@ -1104,10 +1104,23 @@ img {
   font-size: 0.86rem;
 }
 
-.cerdik-chip span {
+.cerdik-chip-copy {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.cerdik-chip-title {
   color: #ffffff;
   font-weight: 800;
   line-height: 1.32;
+}
+
+.cerdik-chip-desc {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.45;
 }
 
 .article-panel p,

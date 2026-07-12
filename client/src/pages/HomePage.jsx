@@ -126,8 +126,8 @@ export default function HomePage({ content, phases, cerdik, entryModules }) {
           <div className="cerdik-strip-copy">
             <h2>CERDIK jadi pegangan harian.</h2>
             <p>
-              CERDIK adalah singkatan langkah pencegahan. Di aplikasi ini, CERDIK dipakai sebagai dasar
-              materi sehat dan reminder harian.
+              Pakai CERDIK sebagai checklist kecil. Tidak harus langsung semua; pilih satu kebiasaan
+              yang paling mungkin dilakukan minggu ini.
             </p>
             <div className="cerdik-actions">
               <Link className="button button-light" to="/pencegahan-dm">
@@ -147,7 +147,10 @@ export default function HomePage({ content, phases, cerdik, entryModules }) {
             {cerdik.map((item) => (
               <div className="cerdik-chip" key={item.letter}>
                 <strong>{item.letter}</strong>
-                <span>{item.title}</span>
+                <span className="cerdik-chip-copy">
+                  <span className="cerdik-chip-title">{item.title}</span>
+                  <span className="cerdik-chip-desc">{item.description}</span>
+                </span>
               </div>
             ))}
           </div>
