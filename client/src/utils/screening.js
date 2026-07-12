@@ -387,7 +387,7 @@ export function getFindriscResult(score, isComplete = true) {
     estimate: "Sekitar 1 dari 2 orang",
     steps: [
       "Segera jadwalkan pemeriksaan gula darah.",
-      "Bawa hasil report saat bertemu tenaga kesehatan.",
+      "Bawa laporan saat bertemu tenaga kesehatan.",
       "Mulai pendampingan perubahan gaya hidup dengan target yang realistis."
     ]
   };

@@ -301,11 +301,11 @@ export default function DeteksiDiniPage({ page }) {
 
   function downloadScreeningReport() {
     if (!isScreeningComplete) {
-      setSavedMessage("Lengkapi semua data sebelum download report.");
+      setSavedMessage("Lengkapi semua data sebelum mengunduh laporan.");
       return;
     }
 
-    setSavedMessage("Pilih Save as PDF pada dialog cetak untuk menyimpan report.");
+    setSavedMessage("Pilih Save as PDF pada dialog cetak untuk menyimpan laporan.");
     window.setTimeout(() => window.print(), 80);
   }
 
@@ -566,7 +566,7 @@ export default function DeteksiDiniPage({ page }) {
               ) : null}
               <button className="followup-action-card" type="button" onClick={downloadScreeningReport}>
                 <span>PDF</span>
-                <strong>Download report</strong>
+                <strong>Unduh laporan PDF</strong>
                 <small>Simpan ringkasan hasil.</small>
               </button>
               <Link className="followup-action-card" to="/gizi-seimbang">
@@ -673,7 +673,7 @@ export default function DeteksiDiniPage({ page }) {
       <div className="screening-print-report" aria-hidden="true">
         <div className="print-report-sheet">
           <p className="print-report-label">Sahabat CERDIK DM</p>
-          <h1>Report FINDRISC</h1>
+          <h1>Laporan FINDRISC</h1>
           <p className="print-report-date">
             Dibuat pada{" "}
             {new Date().toLocaleDateString("id-ID", {
@@ -720,7 +720,7 @@ export default function DeteksiDiniPage({ page }) {
           </section>
 
           <p className="print-report-note">
-            Report ini adalah hasil skrining awal FINDRISC, bukan diagnosis. Gunakan saat berdiskusi
+            Laporan ini adalah hasil skrining awal FINDRISC, bukan diagnosis. Gunakan saat berdiskusi
             dengan tenaga kesehatan.
           </p>
         </div>

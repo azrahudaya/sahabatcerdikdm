@@ -171,7 +171,7 @@ export default function EvaluationPage({ page }) {
         <div className="evaluation-card-head">
           <span>{selectedMode.label}</span>
           <h2>Jawab pertanyaan singkat ini.</h2>
-          <p>Hasilnya dipakai untuk evaluasi pemahaman, bukan penilaian medis.</p>
+          <p>Hasil ini hanya untuk melihat pemahaman materi, bukan penilaian medis.</p>
         </div>
 
         <div className="evaluation-question-list">

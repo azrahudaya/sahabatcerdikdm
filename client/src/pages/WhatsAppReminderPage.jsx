@@ -255,7 +255,7 @@ export default function WhatsAppReminderPage({ page }) {
           <div className="whatsapp-status-card">
             <span>Status WhatsApp</span>
             <strong>{whatsappStatus?.status === "ready" ? "Terhubung" : "Belum terhubung"}</strong>
-            <p>Reminder akan dikirim saat WhatsApp sudah terhubung.</p>
+            <p>Reminder aktif saat WhatsApp terhubung.</p>
           </div>
         </div>
 
@@ -300,7 +300,7 @@ export default function WhatsAppReminderPage({ page }) {
             Fokus pesan (opsional)
             <textarea
               rows="4"
-              placeholder="Kosongkan untuk fokus otomatis sesuai fase dan hari CERDIK."
+              placeholder="Kosongkan untuk memakai pesan otomatis."
               value={form.focus}
               onChange={(event) => updateField("focus", event.target.value)}
             />
@@ -344,7 +344,7 @@ export default function WhatsAppReminderPage({ page }) {
       <div className="reminder-list-card">
         <div className="section-heading">
           <h2>Reminder tersimpan.</h2>
-          <p>Reminder akan dikirim sesuai hari dan jam yang dipilih.</p>
+          <p>Dikirim sesuai jadwal.</p>
         </div>
 
         {reminders.length ? (

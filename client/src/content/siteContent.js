@@ -627,23 +627,22 @@ export const siteContent = {
   },
   evaluation: {
     title: "Evaluasi Edukasi",
-    intro:
-      "Pre-test, post-test, dan kuis singkat untuk mengecek pemahaman pengguna setelah membaca materi.",
+    intro: "Cek pemahaman setelah membaca materi.",
     modes: [
       {
         id: "pretest",
         label: "Pre-test",
-        description: "Isi sebelum belajar untuk melihat pemahaman awal."
+        description: "Isi sebelum mulai belajar."
       },
       {
         id: "posttest",
         label: "Post-test",
-        description: "Isi setelah membaca materi untuk membandingkan perkembangan."
+        description: "Isi setelah membaca materi."
       },
       {
         id: "quiz",
         label: "Kuis CERDIK",
-        description: "Latihan ringan seputar fitur dan pesan utama aplikasi."
+        description: "Latihan singkat seputar pesan utama."
       }
     ],
     questions: [
@@ -656,18 +655,18 @@ export const siteContent = {
           { value: "medicine", label: "Menentukan obat diabetes." }
         ],
         answer: "education",
-        explanation: "Aplikasi bersifat edukatif dan membantu tindak lanjut awal, bukan diagnosis atau terapi."
+        explanation: "Aplikasi ini membantu edukasi dan langkah awal, bukan diagnosis atau terapi."
       },
       {
         id: "cerdik",
-        question: "CERDIK dalam aplikasi ini dipakai sebagai apa?",
+        question: "CERDIK dipakai sebagai apa?",
         options: [
           { value: "steps", label: "Pegangan perilaku pencegahan harian." },
           { value: "score", label: "Skor laboratorium gula darah." },
           { value: "medicine", label: "Nama obat diabetes." }
         ],
         answer: "steps",
-        explanation: "CERDIK adalah rangkaian perilaku: cek kesehatan, hindari asap rokok, aktif, diet seimbang, istirahat, dan kelola stres."
+        explanation: "CERDIK adalah pegangan harian: cek kesehatan, hindari asap rokok, aktif, makan seimbang, istirahat, dan kelola stres."
       },
       {
         id: "findrisc-limit",
@@ -678,18 +677,18 @@ export const siteContent = {
           { value: "pregnancy-test", label: "Tes diabetes gestasional." }
         ],
         answer: "screening",
-        explanation: "FINDRISC adalah skrining non-lab untuk risiko awal, sehingga hasilnya perlu dikonfirmasi bila ada faktor risiko atau keluhan."
+        explanation: "FINDRISC adalah skrining non-lab. Jika ada risiko atau keluhan, lanjut periksa."
       },
       {
         id: "pregnancy-flow",
-        question: "Jika pengguna sedang hamil, jalur yang lebih tepat adalah...",
+        question: "Jika sedang hamil, jalur yang lebih tepat adalah...",
         options: [
           { value: "findrisc-only", label: "Langsung memakai skor FINDRISC sebagai jawaban akhir." },
-          { value: "pregnancy-care", label: "Membaca fase ibu hamil dan mengikuti pemeriksaan tenaga kesehatan." },
+          { value: "pregnancy-care", label: "Baca fase ibu hamil dan ikuti pemeriksaan tenaga kesehatan." },
           { value: "ignore", label: "Tidak perlu membaca materi karena belum ada gejala." }
         ],
         answer: "pregnancy-care",
-        explanation: "Kehamilan membutuhkan perhatian pada diabetes gestasional dan pemeriksaan yang sesuai arahan tenaga kesehatan."
+        explanation: "Saat hamil, cek gula darah perlu mengikuti arahan tenaga kesehatan."
       },
       {
         id: "nutrition",
@@ -700,27 +699,26 @@ export const siteContent = {
           { value: "jantung-janin-jasmani", label: "Jantung, janin, dan jasmani." }
         ],
         answer: "jumlah-jenis-jadwal",
-        explanation: "3J membantu pengguna membaca porsi, pilihan makanan, dan ritme makan."
+        explanation: "3J membantu membaca porsi, pilihan makanan, dan ritme makan."
       },
       {
         id: "warning-sign",
-        question: "Keluhan seperti sering haus, sering buang air kecil, luka sulit sembuh, atau penglihatan kabur yang menetap sebaiknya...",
+        question: "Jika sering haus, sering buang air kecil, luka sulit sembuh, atau penglihatan kabur menetap, sebaiknya...",
         options: [
           { value: "check", label: "Diperiksakan ke tenaga kesehatan." },
           { value: "wait", label: "Dibiarkan sampai hilang sendiri." },
           { value: "only-quiz", label: "Cukup dijawab lewat kuis aplikasi." }
         ],
         answer: "check",
-        explanation: "Keluhan menetap perlu pemeriksaan langsung; aplikasi hanya membantu edukasi dan arahan awal."
+        explanation: "Keluhan menetap perlu pemeriksaan langsung. Aplikasi hanya membantu arahan awal."
       }
     ]
   },
   pages: {
     tentangDm: {
       title: "Tentang Diabetes Melitus",
-      intro:
-        "Kenali dasar DM, gejala awal, faktor risiko pada perempuan, dan alasan pencegahan perlu dimulai lebih cepat.",
-      callout: "DM pada perempuan perlu dilihat sesuai fase kehidupan karena risiko hormonal, kehamilan, dan perubahan metabolik tidak selalu sama di setiap usia.",
+      intro: "Kenali dasar DM, gejala awal, dan faktor risiko pada perempuan.",
+      callout: "Risiko DM bisa berbeda di setiap fase kehidupan: remaja, hamil, nifas, sampai usia lanjut.",
       visual: {
         title: "Ilustrasi gula darah dan tubuh",
         size: "1200 x 800 px",
@@ -751,7 +749,7 @@ export const siteContent = {
         {
           title: "Apa itu Diabetes Melitus",
           body:
-            "Diabetes Melitus adalah kondisi ketika kadar gula darah terlalu tinggi karena tubuh tidak mampu memproduksi insulin, menggunakan insulin dengan baik, atau keduanya.",
+            "Diabetes Melitus terjadi saat gula darah terlalu tinggi karena tubuh kekurangan insulin atau tidak memakai insulin dengan baik.",
           bullets: [
             "Kadar gula darah tinggi dapat berlangsung menahun.",
             "Gejala bisa muncul perlahan dan sering tidak disadari."
@@ -759,7 +757,7 @@ export const siteContent = {
         },
         {
           title: "Jenis utama DM",
-          body: "Jenis yang paling umum dibahas adalah DM tipe 1, DM tipe 2, diabetes gestasional, dan beberapa tipe lainnya.",
+          body: "Jenis yang sering dibahas adalah DM tipe 1, DM tipe 2, dan diabetes saat hamil.",
           bullets: [
             "DM tipe 1 berkaitan dengan produksi insulin yang sangat kurang.",
             "DM tipe 2 paling sering terjadi dan erat dengan resistensi insulin.",
@@ -768,7 +766,7 @@ export const siteContent = {
         },
         {
           title: "Faktor risiko pada perempuan",
-          body: "Risiko dipengaruhi riwayat keluarga, usia, IMT, lingkar perut, aktivitas fisik, pola makan, hipertensi, PCOS, dan riwayat DM gestasional.",
+          body: "Risiko dipengaruhi riwayat keluarga, usia, IMT, lingkar perut, aktivitas, pola makan, hipertensi, PCOS, dan riwayat DM saat hamil.",
           bullets: [
             "Perempuan dengan lingkar perut 80 cm atau lebih perlu lebih waspada.",
             "Riwayat melahirkan bayi lebih dari 4 kg menjadi penanda risiko penting."
@@ -776,7 +774,7 @@ export const siteContent = {
         },
         {
           title: "Tanda dan gejala awal",
-          body: "Gejala klasik DM meliputi sering haus, sering lapar, sering buang air kecil, dan penurunan berat badan tanpa sebab yang jelas.",
+          body: "Tanda umum DM antara lain sering haus, sering lapar, sering buang air kecil, dan berat badan turun tanpa sebab jelas.",
           bullets: [
             "Keluhan tambahan dapat berupa cepat lelah, kesemutan, luka sulit sembuh, dan penglihatan kabur.",
             "Pada perempuan, gatal area kewanitaan juga termasuk tanda yang perlu diwaspadai."
@@ -784,7 +782,7 @@ export const siteContent = {
         },
         {
           title: "Dampak pada kesehatan perempuan",
-          body: "DM dapat memengaruhi kualitas hidup, kehamilan, mata, ginjal, jantung, saraf, serta meningkatkan risiko infeksi dan komplikasi kronis lainnya.",
+          body: "DM bisa berdampak pada kehamilan, mata, ginjal, jantung, saraf, dan risiko infeksi.",
           bullets: [
             "Komplikasi jangka panjang dapat menurunkan produktivitas.",
             "Pencegahan dini jauh lebih ringan dibanding penanganan komplikasi."
@@ -865,8 +863,8 @@ export const siteContent = {
     giziSeimbang: {
       title: "Gizi Seimbang yang mudah dijalankan",
       intro:
-        "Pola makan pencegahan DM dibuat sederhana lewat 3J: jumlah, jenis, jadwal, dan pilihan harian yang lebih aman.",
-      callout: "Kuncinya bukan diet ekstrem. Mulai dari porsi yang lebih sadar, minuman lebih rendah gula, dan jadwal makan yang lebih teratur.",
+        "Atur makan harian dengan 3J: jumlah, jenis, dan jadwal.",
+      callout: "Kuncinya bukan diet ekstrem. Mulai dari porsi yang lebih sadar, minuman rendah gula, dan jadwal makan yang lebih teratur.",
       visual: {
         title: "Ilustrasi piring makan 3J",
         size: "1200 x 800 px",
@@ -896,7 +894,7 @@ export const siteContent = {
       sections: [
         {
           title: "Prinsip 3J",
-          body: "3J membantu pengguna membaca makan harian dengan bahasa sederhana: jumlah makanan, jenis pilihan, dan jadwal makan.",
+          body: "3J membantu mengatur porsi, pilihan makanan, dan jadwal makan.",
           bullets: [
             "Jumlah: makan secukupnya sesuai kebutuhan tubuh, bukan mengikuti porsi besar sebagai kebiasaan.",
             "Jenis: utamakan karbohidrat kompleks, lauk rendah lemak, sayur, buah, dan air putih.",
@@ -919,7 +917,7 @@ export const siteContent = {
         },
         {
           title: "Indeks glikemik",
-          body: "Indeks glikemik membantu memahami makanan yang lebih cepat atau lebih lambat menaikkan gula darah.",
+          body: "Indeks glikemik membantu melihat seberapa cepat makanan menaikkan gula darah.",
           bullets: [
             "Baca indeks glikemik bersama porsi, cara memasak, dan kombinasi makanan, bukan sebagai satu-satunya penentu sehat.",
             "Karbohidrat yang lebih utuh dan tinggi serat biasanya membantu rasa kenyang lebih lama.",
@@ -928,7 +926,7 @@ export const siteContent = {
         },
         {
           title: "Baca label makanan",
-          body: "Label membantu pengguna melihat gula, garam, lemak, dan total energi sebelum membeli makanan kemasan.",
+          body: "Baca label untuk melihat gula, garam, lemak, dan total energi sebelum membeli makanan kemasan.",
           visual: {
             title: "Contoh label makanan",
             size: "960 x 720 px",
@@ -942,7 +940,7 @@ export const siteContent = {
         },
         {
           title: "Camilan sehat",
-          body: "Camilan tetap boleh, tetapi pilih yang lebih membantu kenyang dan tidak hanya memberi gula cepat.",
+          body: "Camilan tetap boleh. Pilih yang lebih mengenyangkan dan tidak tinggi gula.",
           bullets: [
             "Buah potong, kacang secukupnya, yogurt tawar, ubi rebus, atau camilan rumahan bisa menjadi opsi.",
             "Pilih camilan yang punya serat atau protein, bukan hanya rasa manis.",
@@ -1017,9 +1015,9 @@ export const siteContent = {
     privasiData: {
       title: "Privasi Data",
       intro:
-        "Ringkasan cara Sahabat CERDIK DM mengumpulkan, memakai, menyimpan, dan memberi kontrol atas data pengguna.",
+        "Cara aplikasi memakai dan melindungi data akun, skrining, dan reminder.",
       callout:
-        "Privasi ini disusun mengikuti prinsip umum UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi: terbatas, jelas tujuannya, aman, dan dapat dikontrol oleh pengguna.",
+        "Privasi ini mengikuti prinsip UU No. 27 Tahun 2022: tujuan jelas, data terbatas, aman, dan bisa dikontrol pengguna.",
       nextActions: [
         { label: "Baca Syarat & Ketentuan", to: "/syarat-ketentuan" },
         { label: "Masuk ke Profil", to: "/dashboard/profil" }
@@ -1058,7 +1056,7 @@ export const siteContent = {
         {
           title: "Hak dan kontrol pengguna",
           body:
-            "Pengguna tetap memiliki kontrol atas data akun sejauh fitur sudah tersedia di aplikasi.",
+            "Anda bisa mengelola data akun melalui fitur yang tersedia.",
           bullets: [
             "Pengguna dapat memperbarui profil, mengekspor data akun, menghapus hasil skrining, menghapus riwayat skrining, atau menghapus akun.",
             "Pengguna dapat menonaktifkan reminder WhatsApp kapan saja dari halaman reminder.",
@@ -1119,24 +1117,23 @@ export const siteContent = {
     },
     faq: {
       title: "Pertanyaan umum seputar DM pada perempuan",
-      intro:
-        "Jawaban singkat untuk pertanyaan yang sering muncul.",
+      intro: "Jawaban singkat untuk pertanyaan yang sering muncul.",
       items: [
         {
           question: "Apakah DM hanya terjadi pada usia lanjut?",
-          answer: "Tidak. Risiko meningkat seiring usia, tetapi remaja, perempuan usia reproduksi, ibu hamil, dan ibu nifas juga dapat memiliki faktor risiko yang penting."
+          answer: "Tidak. Risiko memang naik seiring usia, tetapi remaja, ibu hamil, dan ibu nifas juga bisa berisiko."
         },
         {
           question: "Apakah ibu hamil perlu skrining khusus?",
-          answer: "Ya. Dokumen menekankan skrining diabetes gestasional pada usia kehamilan 24-28 minggu, terutama bila ada faktor risiko sejak awal."
+          answer: "Ya. Cek gula darah saat hamil biasanya dibahas pada usia kehamilan 24-28 minggu, terutama bila ada faktor risiko."
         },
         {
           question: "Apakah menyusui membantu pencegahan DM?",
-          answer: "Ya, materi pada fase nifas dan menyusui menjelaskan bahwa menyusui membantu pemulihan metabolik ibu dan dapat menurunkan risiko DM tipe 2 di kemudian hari."
+          answer: "Menyusui dapat membantu pemulihan metabolik ibu dan mendukung berat badan yang lebih sehat."
         },
         {
-          question: "Apakah hasil kuis risiko bisa menggantikan pemeriksaan dokter?",
-          answer: "Tidak. Hasil kuis adalah skrining awal yang membantu pengguna memahami apakah perlu mencari evaluasi medis lebih lanjut."
+          question: "Apakah hasil skrining risiko bisa menggantikan pemeriksaan dokter?",
+          answer: "Tidak. Kuis hanya skrining awal. Diagnosis tetap perlu pemeriksaan tenaga kesehatan."
         }
       ]
     }
@@ -1181,7 +1178,7 @@ export const siteContent = {
         {
           label: "Kebiasaan",
           title: "Mulai dari hal harian yang paling sering terjadi.",
-          body: "Fase remaja lebih cocok diarahkan pada pencegahan obesitas dini, pengurangan minuman manis, dan mengurangi duduk terlalu lama.",
+          body: "Mulai dari minuman lebih sehat, lebih sering bergerak, dan tidak duduk terlalu lama.",
           points: [
             "Pilih air putih lebih sering daripada minuman manis.",
             "Kurangi screen time yang membuat tubuh terlalu lama diam.",
@@ -1191,7 +1188,7 @@ export const siteContent = {
         {
           label: "Cek awal",
           title: "Fokus pada pemantauan sederhana.",
-          body: "Skrining skor FINDRISC di aplikasi tidak dipakai untuk usia di bawah 18 tahun, tetapi edukasi risiko tetap bisa dimulai.",
+          body: "FINDRISC belum cocok untuk usia di bawah 18 tahun, tapi edukasi risiko tetap bisa dimulai.",
           points: [
             "Pantau berat badan dan lingkar perut dengan pendampingan orang tua atau tenaga kesehatan bila perlu.",
             "Perhatikan gejala yang menetap seperti sering haus, sering buang air kecil, cepat lelah, atau luka sulit sembuh.",
@@ -1236,8 +1233,8 @@ export const siteContent = {
       modules: [
         {
           label: "Risiko",
-          title: "Risiko khas fase reproduksi dewasa.",
-          body: "Dokumen menekankan riwayat DM gestasional, PCOS, riwayat bayi lahir besar, berat badan, lingkar perut, hipertensi, dan gaya hidup sebagai penanda penting.",
+          title: "Risiko yang perlu diperhatikan.",
+          body: "Catat riwayat DM saat hamil, PCOS, bayi lahir besar, berat badan, lingkar perut, tekanan darah, dan kebiasaan harian.",
           points: [
             "Catat riwayat keluarga DM, PCOS, diabetes saat hamil, atau pernah melahirkan bayi besar.",
             "Perhatikan lingkar perut, IMT, tekanan darah, dan pola makan tinggi gula/garam/lemak.",
@@ -1247,7 +1244,7 @@ export const siteContent = {
         {
           label: "Cek",
           title: "Cek kesehatan berkala dibuat lebih praktis.",
-          body: "Pemeriksaan mandiri di aplikasi dapat membantu mengawali percakapan, tetapi data medis tetap perlu dikonfirmasi di layanan kesehatan.",
+          body: "Cek mandiri membantu memulai percakapan. Data medis tetap perlu dikonfirmasi di layanan kesehatan.",
           visual: {
             title: "Kartu cek reproduksi dewasa",
             size: "960 x 640 px",
@@ -1262,7 +1259,7 @@ export const siteContent = {
         {
           label: "CERDIK",
           title: "Kebiasaan yang paling bisa diubah.",
-          body: "Fase ini cocok untuk membangun ritme bergerak, mengurangi asap rokok, tidur cukup, dan menata stres akibat pekerjaan atau aktivitas harian.",
+          body: "Mulai dari ritme bergerak, mengurangi asap rokok, tidur cukup, dan menata stres harian.",
           points: [
             "Targetkan aktivitas sedang secara rutin, misalnya jalan cepat, bersepeda santai, berenang, atau olahraga yang realistis dilakukan.",
             "Buat rumah dan ruang kerja lebih bebas asap rokok.",
@@ -1272,7 +1269,7 @@ export const siteContent = {
         {
           label: "Gizi",
           title: "Pakai 3J untuk menjaga ritme makan.",
-          body: "Dokumen menekankan jumlah, jenis, dan jadwal sebagai cara membaca makan harian tanpa diet ekstrem.",
+          body: "Gunakan jumlah, jenis, dan jadwal untuk mengatur makan tanpa diet ekstrem.",
           points: [
             "Jumlah: mulai dari porsi yang cukup dan tujuan menjaga berat badan sehat.",
             "Jenis: pilih karbohidrat kompleks, protein tanpa lemak, sayur, buah, dan batasi gorengan/minuman manis.",
@@ -1282,7 +1279,7 @@ export const siteContent = {
         {
           label: "Kehamilan",
           title: "Rencanakan kehamilan lebih sehat.",
-          body: "Untuk pengguna yang sedang menyiapkan kehamilan, fase ini menjadi waktu untuk merapikan faktor risiko sebelum hamil.",
+          body: "Jika sedang merencanakan kehamilan, fase ini cocok untuk merapikan faktor risiko lebih dulu.",
           points: [
             "Diskusikan riwayat DM, PCOS, hipertensi, atau obat rutin dengan tenaga kesehatan sebelum hamil.",
             "Rapikan pola makan, aktivitas fisik, tidur, dan berhenti merokok sebelum konsepsi.",
@@ -1327,8 +1324,8 @@ export const siteContent = {
       modules: [
         {
           label: "DMG",
-          title: "Fokus utama: diabetes gestasional.",
-          body: "Dokumen menempatkan diabetes gestasional sebagai isu utama fase hamil, sehingga pengguna tidak diarahkan ke skor risiko 10 tahun sebagai jawaban akhir.",
+          title: "Fokus utama: gula darah saat hamil.",
+          body: "Saat hamil, pemeriksaan gula darah mengikuti arahan tenaga kesehatan, bukan skor risiko 10 tahun.",
           points: [
             "Perhatikan riwayat DM gestasional, obesitas, PCOS, riwayat bayi lahir besar, atau riwayat keluarga DM.",
             "Skrining DM gestasional perlu dibicarakan dengan tenaga kesehatan, terutama pada usia kehamilan 24-28 minggu.",
@@ -1338,7 +1335,7 @@ export const siteContent = {
         {
           label: "Cek",
           title: "Pemeriksaan rutin dibuat sebagai pegangan.",
-          body: "Aplikasi membantu mengingat poin penting, tetapi pemeriksaan kehamilan tetap mengikuti bidan, dokter, atau fasilitas kesehatan.",
+          body: "Aplikasi membantu mengingat poin penting. Pemeriksaan tetap mengikuti bidan, dokter, atau fasilitas kesehatan.",
           visual: {
             title: "Alur cek ibu hamil",
             size: "960 x 640 px",
@@ -1353,7 +1350,7 @@ export const siteContent = {
         {
           label: "Aktivitas",
           title: "Gerak aman, bukan memaksakan olahraga.",
-          body: "Aktivitas fisik pada kehamilan perlu menyesuaikan kondisi ibu dan arahan tenaga kesehatan.",
+          body: "Aktivitas saat hamil perlu menyesuaikan kondisi ibu dan arahan tenaga kesehatan.",
           points: [
             "Pilih aktivitas ringan sampai sedang seperti jalan santai atau gerakan yang disetujui tenaga kesehatan.",
             "Hentikan aktivitas dan minta arahan bila muncul keluhan tidak biasa.",
@@ -1363,7 +1360,7 @@ export const siteContent = {
         {
           label: "Gizi",
           title: "Pola makan mengikuti 3J dan kebutuhan kehamilan.",
-          body: "Dokumen menekankan porsi, jenis makanan, jadwal makan, serta pembatasan gula, garam, dan lemak.",
+          body: "Perhatikan porsi, jenis makanan, jadwal makan, serta batas gula, garam, dan lemak.",
           points: [
             "Jumlah: sesuaikan makan dengan kebutuhan ibu dan pertumbuhan janin, bukan makan berlebihan.",
             "Jenis: pilih karbohidrat kompleks, protein tanpa lemak, sayur, buah, dan air putih.",
@@ -1373,7 +1370,7 @@ export const siteContent = {
         {
           label: "Keluarga",
           title: "Dukungan rumah ikut menentukan.",
-          body: "Keluarga dapat membantu mengurangi asap rokok, menyiapkan pilihan makan lebih baik, dan mengingatkan jadwal kontrol.",
+          body: "Keluarga bisa membantu mengurangi asap rokok, menyiapkan makan lebih baik, dan mengingatkan jadwal kontrol.",
           points: [
             "Buat rumah bebas asap rokok untuk melindungi ibu dan janin.",
             "Libatkan pasangan/keluarga untuk membantu rutinitas makan, istirahat, dan kontrol.",
@@ -1419,7 +1416,7 @@ export const siteContent = {
         {
           label: "Risiko",
           title: "Risiko pascapersalinan perlu tetap dipantau.",
-          body: "Dokumen menekankan riwayat DM gestasional, bayi lahir besar, perubahan metabolik pascapersalinan, dan pola hidup saat menyusui.",
+          body: "Setelah melahirkan, riwayat DM saat hamil, bayi lahir besar, dan pola hidup tetap perlu diperhatikan.",
           points: [
             "Jika pernah mengalami DM gestasional, risiko DM tipe 2 di masa depan perlu dipantau.",
             "Riwayat bayi lahir besar menjadi tanda penting untuk dicatat di konsultasi berikutnya.",
@@ -1428,8 +1425,8 @@ export const siteContent = {
         },
         {
           label: "Cek",
-          title: "Kontrol setelah melahirkan jangan hilang.",
-          body: "Fase setelah persalinan sering sibuk, jadi aplikasi membantu mengingatkan pemantauan yang tetap penting.",
+          title: "Setelah melahirkan, cek kesehatan tetap penting.",
+          body: "Masa nifas sering sibuk. Reminder bisa membantu agar kontrol tidak terlewat.",
           visual: {
             title: "Cek pascapersalinan",
             size: "960 x 640 px",
@@ -1444,7 +1441,7 @@ export const siteContent = {
         {
           label: "Menyusui",
           title: "Menyusui masuk sebagai bagian pencegahan.",
-          body: "Dokumen menempatkan menyusui sebagai dukungan pemulihan metabolik ibu sekaligus manfaat untuk bayi.",
+          body: "Menyusui dapat mendukung pemulihan metabolik ibu dan memberi manfaat untuk bayi.",
           points: [
             "Menyusui dapat mendukung pemulihan metabolik dan pengelolaan berat badan ibu.",
             "Kebutuhan makan ibu menyusui tetap perlu cukup, bukan diet ketat.",
@@ -1464,7 +1461,7 @@ export const siteContent = {
         {
           label: "Gizi",
           title: "Pola makan mendukung pemulihan dan ASI.",
-          body: "Dokumen tetap memakai prinsip 3J, piring seimbang, serta pembatasan gula, garam, dan lemak.",
+          body: "Gunakan prinsip 3J, piring seimbang, dan batasi gula, garam, serta lemak.",
           points: [
             "Penuhi sumber energi, protein, sayur, buah, dan cairan yang cukup.",
             "Pilih camilan yang membantu kenyang, bukan hanya tinggi gula.",
@@ -1510,7 +1507,7 @@ export const siteContent = {
         {
           label: "Risiko",
           title: "Risiko meningkat dan perlu dibaca lebih hati-hati.",
-          body: "Dokumen menekankan usia, perubahan metabolik, penyakit penyerta, dan risiko hipoglikemia sebagai perhatian utama pada lansia.",
+          body: "Pada usia lanjut, penyakit penyerta dan risiko gula darah terlalu rendah perlu lebih diperhatikan.",
           points: [
             "Perhatikan riwayat hipertensi, kolesterol tinggi, penyakit jantung, stroke, atau penggunaan obat DM.",
             "Waspadai tanda gula darah terlalu rendah seperti gemetar, keringat dingin, lemas, bingung, atau pusing.",
@@ -1520,7 +1517,7 @@ export const siteContent = {
         {
           label: "PATUH",
           title: "Gunakan PATUH untuk pencegahan komplikasi.",
-          body: "Untuk lansia yang sudah terdiagnosis DM, dokumen menekankan perilaku PATUH sebagai pegangan harian.",
+          body: "Jika sudah terdiagnosis DM, PATUH bisa menjadi pegangan harian.",
           points: [
             "Periksa kesehatan secara rutin.",
             "Atasi penyakit dengan pengobatan yang tepat dan teratur.",
@@ -1530,7 +1527,7 @@ export const siteContent = {
         {
           label: "Cek",
           title: "Pemeriksaan rutin membantu tetap mandiri.",
-          body: "Pemantauan lansia tidak berhenti pada gula darah, tetapi juga mata, ginjal, kaki, tekanan darah, dan profil lipid.",
+          body: "Pemantauan tidak hanya gula darah, tetapi juga mata, ginjal, kaki, tekanan darah, dan lipid.",
           visual: {
             title: "Cek komplikasi lansia",
             size: "960 x 640 px",
@@ -1544,8 +1541,8 @@ export const siteContent = {
         },
         {
           label: "Kaki",
-          title: "Perawatan kaki dibuat lebih eksplisit.",
-          body: "Dokumen menekankan pencegahan luka kaki karena gangguan saraf dan sirkulasi dapat menjadi komplikasi penting.",
+          title: "Perawatan kaki perlu rutin.",
+          body: "Periksa kaki untuk mencegah luka yang terlambat disadari.",
           points: [
             "Periksa kaki setiap hari untuk melihat luka, kemerahan, kulit pecah, atau perubahan warna.",
             "Hindari berjalan tanpa alas kaki, termasuk di dalam rumah.",
@@ -1555,7 +1552,7 @@ export const siteContent = {
         {
           label: "Aktif",
           title: "Aktivitas aman lebih penting daripada berat.",
-          body: "Aktivitas lansia perlu terukur, tidak memaksa, dan menyesuaikan kemampuan fisik serta penyakit penyerta.",
+          body: "Pilih aktivitas yang aman, ringan, dan sesuai kemampuan tubuh.",
           points: [
             "Pilih jalan santai, senam ringan, berkebun, atau aktivitas rumah yang aman.",
             "Kurangi duduk terlalu lama dengan jeda gerak ringan.",
@@ -1565,7 +1562,7 @@ export const siteContent = {
         {
           label: "Gizi",
           title: "Piring seimbang dan hidrasi tetap menjadi kunci.",
-          body: "Dokumen menekankan 3J, pembatasan gula/garam/lemak, sayur-buah, dan cukup air putih untuk lansia.",
+          body: "Tetap pakai 3J, batasi gula/garam/lemak, tambah sayur-buah, dan cukup minum air putih.",
           points: [
             "Jumlah: porsi lebih sadar karena kebutuhan energi dapat berubah seiring usia.",
             "Jenis: utamakan karbohidrat kompleks, protein tanpa lemak, sayur, buah, dan batasi gorengan/makanan kaleng.",

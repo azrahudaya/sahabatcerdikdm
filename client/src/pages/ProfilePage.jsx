@@ -277,14 +277,14 @@ export default function ProfilePage({ phases = [] }) {
     <section className="content-section content-shell profile-page">
       <PageMeta
         title="Profil Akun"
-        description="Kelola data akun Sahabat CERDIK DM untuk hasil skrining dan reminder."
+        description="Kelola kontak, fase, password, dan data akun."
       />
 
       <BackIconLink className="profile-back-control" />
 
       <header className="profile-heading">
         <h1>Profil akun</h1>
-        <p>Pastikan hasil skrining dan reminder dikirim ke kontak yang tepat.</p>
+        <p>Pastikan kontak dan fase Anda sudah sesuai.</p>
       </header>
 
       <form className="profile-form" noValidate onSubmit={handleSubmit}>
@@ -312,7 +312,7 @@ export default function ProfilePage({ phases = [] }) {
             value={form.email}
             onChange={(event) => updateField("email", event.target.value)}
           />
-          <small>Ringkasan hasil skrining akan dikirim ke alamat ini.</small>
+          <small>Dipakai untuk hasil skrining dan pemulihan akun.</small>
           {errors.email ? <small className="field-error">{errors.email}</small> : null}
         </label>
 
@@ -327,7 +327,7 @@ export default function ProfilePage({ phases = [] }) {
             value={form.phone}
             onChange={(event) => updateField("phone", event.target.value)}
           />
-          <small>Nomor ini akan otomatis digunakan saat membuat reminder.</small>
+          <small>Dipakai untuk reminder WhatsApp.</small>
           {errors.phone ? <small className="field-error">{errors.phone}</small> : null}
         </label>
 
@@ -344,7 +344,7 @@ export default function ProfilePage({ phases = [] }) {
               <option key={phase.slug} value={phase.slug}>{phase.label}</option>
             ))}
           </select>
-          <small>Digunakan untuk menampilkan jalur materi yang lebih relevan.</small>
+          <small>Membantu menampilkan materi yang lebih pas.</small>
         </label>
 
         {errors.form ? <p className="profile-form-error" role="alert">{errors.form}</p> : null}
@@ -364,8 +364,8 @@ export default function ProfilePage({ phases = [] }) {
             <h2>Status email</h2>
             <p>
               {user.emailVerified
-                ? "Email sudah terverifikasi dan siap digunakan untuk pemulihan akun."
-                : "Verifikasi email agar pemulihan akun dapat digunakan dengan aman."}
+                ? "Email sudah siap dipakai."
+                : "Verifikasi email untuk pemulihan akun."}
             </p>
           </div>
           <div className="profile-verification-actions">
@@ -393,7 +393,7 @@ export default function ProfilePage({ phases = [] }) {
       <section className="profile-security-section profile-data-section">
         <div>
           <h2>Data akun dan skrining</h2>
-          <p>Ekspor data akun atau hapus riwayat skrining yang tersimpan.</p>
+          <p>Unduh data akun atau hapus riwayat skrining.</p>
         </div>
         <div className="profile-verification-actions">
           <button
@@ -420,8 +420,7 @@ export default function ProfilePage({ phases = [] }) {
         <div>
           <h2>Hapus akun</h2>
           <p>
-            Menghapus akun akan menghapus profil, hasil skrining, evaluasi, reminder,
-            feedback, dan token akun dari database.
+            Menghapus akun juga menghapus profil, hasil skrining, evaluasi, reminder, dan feedback.
           </p>
         </div>
         <label className="profile-field profile-delete-confirm">
@@ -445,7 +444,7 @@ export default function ProfilePage({ phases = [] }) {
       <form className="profile-form profile-password-form" onSubmit={handlePasswordSubmit}>
         <div className="profile-form-title">
           <h2>Ubah password</h2>
-          <p>Setelah diubah, semua sesi lama akan keluar otomatis.</p>
+          <p>Setelah diubah, sesi lama akan keluar otomatis.</p>
         </div>
         <label className="profile-field">
           <span>Password saat ini</span>
@@ -491,7 +490,7 @@ export default function ProfilePage({ phases = [] }) {
       <section className="profile-logout-section">
         <div>
           <h2>Keluar dari akun</h2>
-          <p>Gunakan ini jika perangkat dipakai bersama orang lain.</p>
+          <p>Gunakan jika perangkat dipakai bersama.</p>
         </div>
         <button className="button button-secondary" type="button" onClick={handleLogout}>Keluar</button>
       </section>

@@ -153,6 +153,7 @@ Prioritas: Rendah
 ### 6. `/tentang-dm`
 
 Status: Done
+Applied: Done (Tahap 2)
 
 Yang sudah bagus:
 
@@ -203,6 +204,7 @@ Prioritas: Tinggi
 ### 8. `/gizi-seimbang`
 
 Status: Done
+Applied: Done (Tahap 2)
 
 Yang sudah bagus:
 
@@ -247,6 +249,7 @@ Prioritas: Tinggi
 ### 10. `/faq`
 
 Status: Done
+Applied: Done (Tahap 2)
 
 Yang sudah bagus:
 
@@ -288,6 +291,7 @@ Prioritas: Sedang
 ### 12. `/privasi-data`
 
 Status: Done
+Applied: Done (Tahap 2)
 
 Yang sudah bagus:
 
@@ -309,6 +313,7 @@ Prioritas: Sedang
 ### 13. `/fase/remaja`
 
 Status: Done
+Applied: Done (Tahap 2)
 
 Yang sudah bagus:
 
@@ -328,6 +333,7 @@ Prioritas: Sedang
 ### 14. `/fase/reproduksi-dewasa`
 
 Status: Done
+Applied: Done (Tahap 2)
 
 Yang sudah bagus:
 
@@ -347,6 +353,7 @@ Prioritas: Tinggi
 ### 15. `/fase/ibu-hamil`
 
 Status: Done
+Applied: Done (Tahap 2)
 
 Yang sudah bagus:
 
@@ -366,6 +373,7 @@ Prioritas: Sedang
 ### 16. `/fase/ibu-nifas-menyusui`
 
 Status: Done
+Applied: Done (Tahap 2)
 
 Yang sudah bagus:
 
@@ -385,6 +393,7 @@ Prioritas: Sedang
 ### 17. `/fase/usia-lanjut`
 
 Status: Done
+Applied: Done (Tahap 2)
 
 Yang sudah bagus:
 
@@ -428,6 +437,7 @@ Prioritas: Tinggi
 ### 19. `/dashboard/profil`
 
 Status: Done
+Applied: Done (Tahap 2)
 
 Yang sudah bagus:
 
@@ -449,6 +459,7 @@ Prioritas: Sedang
 ### 20. `/dashboard/skrining/:id`
 
 Status: Done
+Applied: Done (Tahap 2)
 
 Yang sudah bagus:
 
@@ -490,6 +501,7 @@ Prioritas: Tinggi
 ### 22. `/dashboard/reminder-harian`
 
 Status: Done
+Applied: Done (Tahap 2)
 
 Yang sudah bagus:
 
@@ -612,6 +624,7 @@ Prioritas: Rendah
 ### 28. `/dashboard/evaluasi`
 
 Status: Done
+Applied: Done (Tahap 2)
 
 Yang sudah bagus:
 
@@ -695,15 +708,15 @@ Audit page besar sudah selesai, tetapi masih ada microcopy yang perlu audit lanj
 
 ### Prioritas Sedang
 
-1. Tentang DM.
-2. Gizi Seimbang.
-3. FAQ.
-4. Privasi Data.
-5. Semua page fase kehidupan.
-6. Profil.
-7. Detail skrining.
-8. Reminder.
-9. Evaluasi.
+1. Tentang DM. Applied: Done (Tahap 2)
+2. Gizi Seimbang. Applied: Done (Tahap 2)
+3. FAQ. Applied: Done (Tahap 2)
+4. Privasi Data. Applied: Done (Tahap 2)
+5. Semua page fase kehidupan. Applied: Done (Tahap 2)
+6. Profil. Applied: Done (Tahap 2)
+7. Detail skrining. Applied: Done (Tahap 2)
+8. Reminder. Applied: Done (Tahap 2)
+9. Evaluasi. Applied: Done (Tahap 2)
 
 ### Prioritas Rendah
 

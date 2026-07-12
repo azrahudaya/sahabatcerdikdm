@@ -121,7 +121,7 @@ export default function ScreeningDetailPage() {
     <section className="content-section content-shell screening-detail-page">
       <PageMeta
         title="Detail Hasil Skrining"
-        description="Detail hasil skrining FINDRISC yang tersimpan di akun Sahabat CERDIK DM."
+        description="Detail hasil FINDRISC yang tersimpan di akun."
       />
 
       <div className="screening-detail-topbar">
@@ -166,17 +166,17 @@ export default function ScreeningDetailPage() {
             <article className="screening-detail-card">
               <span>Estimasi 10 tahun</span>
               <strong>{screening.resultEstimate || riskResult.estimate}</strong>
-              <p>Bersifat edukatif, bukan diagnosis.</p>
+              <p>Ini estimasi, bukan diagnosis.</p>
             </article>
             <article className="screening-detail-card">
               <span>IMT</span>
               <strong>{bmi ? Number(bmi).toFixed(1) : "-"}</strong>
-              <p>Berat dan tinggi badan saat skrining.</p>
+              <p>Dihitung dari tinggi dan berat badan.</p>
             </article>
             <article className="screening-detail-card">
               <span>Lingkar perut</span>
               <strong>{waist ? `${waist} cm` : "-"}</strong>
-              <p>Dicatat sebagai faktor risiko FINDRISC.</p>
+              <p>Salah satu faktor risiko FINDRISC.</p>
             </article>
           </section>
 
@@ -226,7 +226,7 @@ export default function ScreeningDetailPage() {
           <div className="screening-detail-print-report" aria-hidden="true">
             <div className="print-report-sheet">
               <p className="print-report-label">Sahabat CERDIK DM</p>
-              <h1>Report FINDRISC</h1>
+              <h1>Laporan FINDRISC</h1>
               <p className="print-report-date">Hasil tersimpan pada {formatDate(screening.createdAt)}</p>
 
               <div className="print-report-grid">
@@ -240,7 +240,7 @@ export default function ScreeningDetailPage() {
                 <section>
                   <span>Estimasi risiko 10 tahun</span>
                   <strong>{screening.resultEstimate || riskResult.estimate}</strong>
-                  <p>Estimasi ini berasal dari kategori FINDRISC dan bukan diagnosis medis.</p>
+                  <p>Ini estimasi FINDRISC, bukan diagnosis.</p>
                   <small>
                     IMT {bmi ? Number(bmi).toFixed(1) : "-"}; lingkar perut {waist ? `${waist} cm` : "-"}
                   </small>
@@ -266,8 +266,8 @@ export default function ScreeningDetailPage() {
               </section>
 
               <p className="print-report-note">
-                Report ini adalah hasil skrining mandiri awal dengan FINDRISC dan bukan diagnosis.
-                Gunakan sebagai bahan diskusi saat berkonsultasi dengan tenaga kesehatan.
+                Laporan ini adalah hasil skrining awal FINDRISC, bukan diagnosis. Gunakan saat berdiskusi
+                dengan tenaga kesehatan.
               </p>
             </div>
           </div>
