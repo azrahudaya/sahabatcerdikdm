@@ -19,6 +19,45 @@ export default function DashboardPage({ dashboard, phases = [] }) {
   const latestScreening = latestScreenings[0] || null;
   const selectedPhase = phases.find((phase) => phase.slug === user?.preferredPhaseSlug) || null;
   const dashboardSections = dashboard?.sections || [];
+  const dashboardItems = dashboardSections.flatMap((section) =>
+    section.items.map((item) => ({
+      ...item,
+      sectionTitle: section.title
+    }))
+  );
+  const findDashboardItem = (id) => dashboardItems.find((item) => item.id === id);
+  const riskItem = findDashboardItem("deteksi-dini");
+  const reminderItem = findDashboardItem("reminder-harian");
+  const focusActions = [
+    riskItem
+      ? {
+          ...riskItem,
+          label: "Cek risiko",
+          description: latestScreening
+            ? "Buka hasil terakhir atau isi ulang skrining."
+            : "Isi skrining singkat untuk mulai mengenali risiko."
+        }
+      : null,
+    {
+      id: "materi-fase",
+      label: selectedPhase ? selectedPhase.label : "Materi sesuai fase",
+      icon: "FK",
+      iconSrc: "/menu-icons/fk.png",
+      tone: "sage-soft",
+      description: selectedPhase ? selectedPhase.summary : "Pilih fase agar materi lebih dekat dengan kondisi Anda.",
+      to: selectedPhase ? `/fase/${selectedPhase.slug}` : "/dashboard#pilih-fase"
+    },
+    reminderItem
+      ? {
+          ...reminderItem,
+          label: "Reminder",
+          description: "Atur pengingat WhatsApp untuk kebiasaan CERDIK."
+        }
+      : null
+  ].filter(Boolean);
+  const secondaryItems = dashboardItems.filter(
+    (item) => !["deteksi-dini", "reminder-harian"].includes(item.id)
+  );
 
   async function handlePhaseChange(phaseSlug) {
     setIsUpdatingPhase(true);
@@ -74,7 +113,7 @@ export default function DashboardPage({ dashboard, phases = [] }) {
 
         if (isMounted) {
           setLatestScreenings((data.screenings || []).slice(0, 3));
-          setScreeningStatus("Riwayat skrining akun siap dibuka.");
+          setScreeningStatus("Hasil tersimpan bisa dibuka lagi dari akun ini.");
         }
       } catch (_error) {
         if (isMounted) {
@@ -103,7 +142,7 @@ export default function DashboardPage({ dashboard, phases = [] }) {
             <span>Dashboard</span>
             <h1>Halo{user?.name ? `, ${user.name}` : ""}.</h1>
             <p>
-              Mulai dari cek risiko, lanjutkan ke materi yang paling dekat dengan kebutuhan Anda.
+              Mulai dari satu langkah kecil: cek risiko, baca materi yang sesuai fase, atau aktifkan reminder.
             </p>
             {moduleLabel ? <p className="dashboard-hint">Anda tadi memilih menu {moduleLabel}.</p> : null}
             {notice ? <p className="profile-form-success">{notice}</p> : null}
@@ -138,7 +177,26 @@ export default function DashboardPage({ dashboard, phases = [] }) {
           </Link>
         </section>
 
-        <section className="dashboard-phase-card">
+        <section className="dashboard-focus-section">
+          <div className="dashboard-menu-heading">
+            <h2>Mulai dari sini</h2>
+          </div>
+          <div className="entry-grid dashboard-entry-grid dashboard-focus-grid">
+            {focusActions.map((action) => (
+              <Link className="entry-tile" key={action.id} to={action.to}>
+                <span className={`entry-icon tone-${action.tone}${action.iconSrc ? " has-image" : ""}`}>
+                  {action.iconSrc ? <img src={action.iconSrc} alt="" aria-hidden="true" /> : action.icon}
+                </span>
+                <span className="entry-copy">
+                  <strong>{action.label}</strong>
+                  <p>{action.description}</p>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="dashboard-phase-card" id="pilih-fase">
           <div className="dashboard-phase-copy">
             <span>Jalur materi</span>
             <h2>{selectedPhase ? selectedPhase.label : "Pilih fase kehidupan."}</h2>
@@ -176,27 +234,22 @@ export default function DashboardPage({ dashboard, phases = [] }) {
           </div>
         </section>
 
-        {dashboardSections.map((section) => (
-          <section className="dashboard-menu-section" id={section.id} key={section.id}>
-            <div className="dashboard-menu-heading">
-              <h2>{section.title}</h2>
-              <p>{section.description}</p>
-            </div>
-            <div className="entry-grid dashboard-entry-grid" aria-label={section.title}>
-              {section.items.map((action) => (
-                <Link className="entry-tile" key={action.id} to={action.to}>
-                  <span className={`entry-icon tone-${action.tone}${action.iconSrc ? " has-image" : ""}`}>
-                    {action.iconSrc ? <img src={action.iconSrc} alt="" aria-hidden="true" /> : action.icon}
-                  </span>
-                  <span className="entry-copy">
-                    <strong>{action.label}</strong>
-                    <p>{action.description}</p>
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </section>
-        ))}
+        <details className="dashboard-more-panel">
+          <summary>Menu lainnya</summary>
+          <div className="entry-grid dashboard-entry-grid dashboard-secondary-grid">
+            {secondaryItems.map((action) => (
+              <Link className="entry-tile" key={action.id} to={action.to}>
+                <span className={`entry-icon tone-${action.tone}${action.iconSrc ? " has-image" : ""}`}>
+                  {action.iconSrc ? <img src={action.iconSrc} alt="" aria-hidden="true" /> : action.icon}
+                </span>
+                <span className="entry-copy">
+                  <strong>{action.label}</strong>
+                  <p>{action.description}</p>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </details>
 
         <section className="dashboard-history-panel dashboard-history-compact">
           <div>

@@ -102,8 +102,6 @@ export default function HomePage({ content, phases, cerdik, entryModules }) {
         <div className="phase-list">
           {phases.map((phase) => (
             <article className={`phase-list-item tone-${phase.accent}`} key={phase.slug}>
-              <div className="phase-list-image" aria-label={`Ilustrasi fase ${phase.label}`} role="img" />
-
               <div className="phase-list-copy">
                 <h3>{phase.label}</h3>
                 <p>{phase.summary}</p>

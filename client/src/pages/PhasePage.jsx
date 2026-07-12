@@ -1,6 +1,5 @@
 import { Link, useParams } from "react-router-dom";
 
-import ImagePlaceholder from "../components/ImagePlaceholder.jsx";
 import PageMeta from "../components/PageMeta.jsx";
 
 export default function PhasePage({ phases }) {
@@ -41,15 +40,6 @@ export default function PhasePage({ phases }) {
           </div>
         </div>
 
-        <ImagePlaceholder
-          className="phase-visual-placeholder"
-          title={phase.visual?.title || `Ilustrasi fase ${phase.label}`}
-          size={phase.visual?.size || "1200 x 720 px"}
-          note={
-            phase.visual?.note ||
-            "Bisa berisi ilustrasi perempuan sesuai fase, kartu CERDIK, dan satu pesan pencegahan utama."
-          }
-        />
       </div>
 
       {phase.sourceNote ? (
@@ -96,20 +86,9 @@ export default function PhasePage({ phases }) {
                   <h3>{module.title}</h3>
                   <p>{module.body}</p>
                 </div>
-                {module.visual ? (
-                  <ImagePlaceholder
-                    className="phase-module-visual"
-                    title={module.visual.title}
-                    size={module.visual.size}
-                    note={module.visual.note}
-                  />
-                ) : null}
                 <ul className="topic-point-list">
-                  {module.points.map((point, index) => (
-                    <li key={point}>
-                      <span>{String(index + 1).padStart(2, "0")}</span>
-                      {point}
-                    </li>
+                  {module.points.map((point) => (
+                    <li key={point}>{point}</li>
                   ))}
                 </ul>
               </article>

@@ -82,7 +82,7 @@ export const siteContent = {
       icon: "ME",
       iconSrc: "/menu-icons/me.png",
       tone: "blush",
-      description: "Ruang video dan infografis edukasi.",
+      description: "Video dan infografis pendek.",
       to: "/dashboard/media-edukasi"
     }
   ],
@@ -323,7 +323,7 @@ export const siteContent = {
             icon: "ME",
             iconSrc: "/menu-icons/me.png",
             tone: "blush",
-            description: "Video, materi visual, dan media belajar ringan.",
+            description: "Video pendek dan infografis DM.",
             to: "/dashboard/media-edukasi"
           },
           {
@@ -364,7 +364,7 @@ export const siteContent = {
             label: "Tim Pengembang",
             icon: "TP",
             tone: "blush",
-            description: "Ruang identitas tim penyusun aplikasi.",
+            description: "Pihak penyusun dan validator materi.",
             to: "/dashboard/tim-pengembang"
           },
           {
@@ -372,7 +372,7 @@ export const siteContent = {
             label: "Sumber Referensi",
             icon: "SR",
             tone: "sage-soft",
-            description: "Catatan sumber materi dan batasan informasi.",
+            description: "Rujukan materi dan batas informasi.",
             to: "/dashboard/sumber-referensi"
           },
           {
@@ -398,7 +398,7 @@ export const siteContent = {
   dashboardPages: {
     mediaEdukasi: {
       title: "Media Edukasi",
-      intro: "Bagian ini disiapkan untuk menampung video, infografis, dan materi visual sesuai paket media edukasi DM.",
+      intro: "Video dan infografis membantu pengguna menangkap inti materi tanpa membaca terlalu panjang.",
       placeholders: [
         {
           title: "Video edukasi DM remaja",
@@ -443,7 +443,7 @@ export const siteContent = {
     },
     reminderHarian: {
       title: "Reminder Harian",
-      intro: "Bagian ini menjadi ruang untuk pengingat sederhana yang membantu menjaga ritme sehat sepanjang minggu.",
+      intro: "Atur pesan WhatsApp ringan untuk menjaga ritme sehat sepanjang minggu.",
       placeholders: [
         {
           title: "Mockup kalender reminder",
@@ -462,7 +462,7 @@ export const siteContent = {
         },
         {
           title: "Siap dikembangkan",
-          body: "Ke depan, bagian ini bisa dihubungkan ke notifikasi atau jadwal personal."
+          body: "Reminder bisa dibuat lebih personal mengikuti fase dan hasil skrining pengguna."
         }
       ]
     },
@@ -493,7 +493,7 @@ export const siteContent = {
     },
     timPengembang: {
       title: "Tim Pengembang",
-      intro: "Halaman ini disiapkan sebagai ruang identitas tim penyusun, validator materi, dan pengembang media edukasi.",
+      intro: "Kenali pihak yang menyusun materi, memvalidasi isi, dan mengembangkan aplikasi.",
       placeholders: [
         {
           title: "Foto atau ilustrasi tim",
@@ -719,7 +719,7 @@ export const siteContent = {
     tentangDm: {
       title: "Tentang Diabetes Melitus",
       intro:
-        "Halaman ini merangkum pengertian dasar DM, jenis-jenisnya, faktor risiko pada perempuan, gejala awal, dan dampak kesehatan yang perlu dipahami sejak dini.",
+        "Kenali dasar DM, gejala awal, faktor risiko pada perempuan, dan alasan pencegahan perlu dimulai lebih cepat.",
       callout: "DM pada perempuan perlu dilihat sesuai fase kehidupan karena risiko hormonal, kehamilan, dan perubahan metabolik tidak selalu sama di setiap usia.",
       visual: {
         title: "Ilustrasi gula darah dan tubuh",
@@ -795,7 +795,7 @@ export const siteContent = {
     pencegahanDm: {
       title: "Pencegahan Diabetes Melitus",
       intro:
-        "Pencegahan DM pada website ini bertumpu pada strategi CERDIK, gaya hidup sehat perempuan, serta penyesuaian anjuran sesuai fase kehidupan.",
+        "Pencegahan DM dimulai dari kebiasaan yang bisa dijalankan: CERDIK, gerak rutin, makan lebih sadar, dan cek berkala.",
       callout: "Target besar dari pencegahan primer adalah membangun kebiasaan sehat sebelum komplikasi muncul, bukan menunggu gejala berat.",
       visual: {
         title: "Ilustrasi langkah CERDIK",
@@ -865,7 +865,7 @@ export const siteContent = {
     giziSeimbang: {
       title: "Gizi Seimbang yang mudah dijalankan",
       intro:
-        "Bagian ini membantu pengguna memahami pola makan pencegahan DM secara singkat: jumlah, jenis, jadwal, dan pilihan harian yang lebih aman.",
+        "Pola makan pencegahan DM dibuat sederhana lewat 3J: jumlah, jenis, jadwal, dan pilihan harian yang lebih aman.",
       callout: "Kuncinya bukan diet ekstrem. Mulai dari porsi yang lebih sadar, minuman lebih rendah gula, dan jadwal makan yang lebih teratur.",
       visual: {
         title: "Ilustrasi piring makan 3J",
@@ -907,7 +907,7 @@ export const siteContent = {
           title: "Contoh menu harian",
           body: "Contoh ini bukan resep wajib. Gunakan sebagai pola sederhana untuk menyusun piring yang lebih seimbang.",
           visual: {
-            title: "Placeholder contoh piring harian",
+            title: "Contoh piring harian",
             size: "1080 x 720 px",
             note: "Bisa berisi tiga kartu: sarapan, makan siang, makan malam, masing-masing dengan piring sederhana."
           },
@@ -930,7 +930,7 @@ export const siteContent = {
           title: "Baca label makanan",
           body: "Label membantu pengguna melihat gula, garam, lemak, dan total energi sebelum membeli makanan kemasan.",
           visual: {
-            title: "Placeholder label makanan",
+            title: "Contoh label makanan",
             size: "960 x 720 px",
             note: "Bisa berupa label nutrisi abu-abu dengan penanda takaran saji, gula, natrium, lemak, dan kalori."
           },
@@ -1123,7 +1123,7 @@ export const siteContent = {
           title: "Cek kesehatan berkala dibuat lebih praktis.",
           body: "Pemeriksaan mandiri di aplikasi dapat membantu mengawali percakapan, tetapi data medis tetap perlu dikonfirmasi di layanan kesehatan.",
           visual: {
-            title: "Placeholder kartu cek reproduksi dewasa",
+            title: "Kartu cek reproduksi dewasa",
             size: "960 x 640 px",
             note: "Bisa berisi checklist IMT, lingkar perut, tekanan darah, gula darah, SADARI, dan IVA."
           },
@@ -1214,7 +1214,7 @@ export const siteContent = {
           title: "Pemeriksaan rutin dibuat sebagai pegangan.",
           body: "Aplikasi membantu mengingat poin penting, tetapi pemeriksaan kehamilan tetap mengikuti bidan, dokter, atau fasilitas kesehatan.",
           visual: {
-            title: "Placeholder alur cek ibu hamil",
+            title: "Alur cek ibu hamil",
             size: "960 x 640 px",
             note: "Bisa berupa timeline ANC, cek tekanan darah, berat badan, gula darah, dan skrining 24-28 minggu."
           },
@@ -1305,7 +1305,7 @@ export const siteContent = {
           title: "Kontrol setelah melahirkan jangan hilang.",
           body: "Fase setelah persalinan sering sibuk, jadi aplikasi membantu mengingatkan pemantauan yang tetap penting.",
           visual: {
-            title: "Placeholder cek pascapersalinan",
+            title: "Cek pascapersalinan",
             size: "960 x 640 px",
             note: "Bisa berisi checklist kontrol nifas, berat badan, lingkar perut, gula darah, tekanan darah, dan reminder."
           },
@@ -1406,7 +1406,7 @@ export const siteContent = {
           title: "Pemeriksaan rutin membantu tetap mandiri.",
           body: "Pemantauan lansia tidak berhenti pada gula darah, tetapi juga mata, ginjal, kaki, tekanan darah, dan profil lipid.",
           visual: {
-            title: "Placeholder cek komplikasi lansia",
+            title: "Cek komplikasi lansia",
             size: "960 x 640 px",
             note: "Bisa berisi checklist mata, ginjal, saraf/kaki, tekanan darah, lipid, dan gula darah."
           },

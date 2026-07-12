@@ -164,6 +164,10 @@ export default function DeteksiDiniPage({ page }) {
   }, [age, findriscAnswers, height, screeningContext, screeningSessionId, userScope, waist, weight]);
 
   useEffect(() => {
+    if (activeStep === 0) {
+      return;
+    }
+
     progressRef.current?.scrollIntoView({
       block: "start",
       behavior: "smooth"

@@ -1,4 +1,3 @@
-import ImagePlaceholder from "../components/ImagePlaceholder.jsx";
 import PageMeta from "../components/PageMeta.jsx";
 
 export default function DashboardInfoPage({ page }) {
@@ -11,19 +10,6 @@ export default function DashboardInfoPage({ page }) {
           <p>{page.intro}</p>
         </div>
       </div>
-
-      {page.placeholders ? (
-        <div className="placeholder-grid">
-          {page.placeholders.map((item) => (
-            <ImagePlaceholder
-              key={item.title}
-              title={item.title}
-              size={item.size}
-              note={item.note}
-            />
-          ))}
-        </div>
-      ) : null}
 
       <div className="info-card-grid">
         {page.points.map((item, index) => (
